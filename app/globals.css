@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@font-face {
+  font-family: "ComicSans";
+  src: url("/fonts/LDF-ComicSans/LDFComicSansBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MoreSugar";
+  src: url("/fonts/more-sugar/MoreSugar-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+.hero-title{
+  font-family: "MoreSugar";
+  letter-spacing: 3px;
+}
+
+.text-comic-sans{
+  font-family: "ComicSans";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding:0 20px;
+  border-right: 1px solid #0a0a0a;
+}
+.font-family-cosmic-sans{
+  font-family: "ComicSans";
+}
+.font-family-more-sugar{
+  font-family: "MoreSugar";
+}
+
+.border-right-0{
+  border-right: none !important;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+padding:20px 80px;
+background: #fffcfa;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:30px 80px 0;
+}
+
+.btn{
+background:#ff7a45;
+color:white;
+padding:12px 24px;
+border-radius:20px;
+}
+
+.products .grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:40px;
+}
+
+.product{
+background:white;
+padding:20px;
+border-radius:20px;
+text-align:center;
+transition:.3s;
+}
+
+.product:hover{
+transform:translateY(-10px);
+}
+
+.cta{
+background:#ff7a45;
+color:white;
+padding:14px 28px;
+border-radius:30px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:40px;
+}
+
+.product{
+background:white;
+border-radius:20px;
+padding:20px;
+transition:.3s;
+}
+
+.product:hover{
+transform:translateY(-10px) scale(1.03);
+}
+.section-padding{
+  padding: 50px 80px;
+}
+.right-sidebar-new::before{
+  background: #046b46;
+  width: 5px;
+  height: 30px;
+  border-radius: 8px;
+  content: "";
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+@media (max-width: 768px) {
+  .nav, .section-padding{
+    padding: 20px !important;
+  }
+  .hero{
+    padding: 20px;
+    gap: 50px;
+  }
+  .hero-fly{
+    width:80px !important;
+  }
+  .floating-superhero{
+    width: 100px !important;
+  }
+
+}
