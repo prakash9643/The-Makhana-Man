@@ -21,25 +21,6 @@ repeat:-1,
 yoyo:true,
 duration:2
 })
-gsap.to(".hero-fly",{
-
-y:-30,
-repeat:-1,
-yoyo:true,
-duration:2,
-ease:"power1.inOut"
-
-})
-
-gsap.to(".hero-fly",{
-
-x:20,
-repeat:-1,
-yoyo:true,
-duration:4,
-ease:"sine.inOut"
-
-})
 },[])
 
 
@@ -88,10 +69,25 @@ return(
             "
           >
             Healthy <br/>Snacking <br/>Made Fun!
-						<img src={"/images/1.png"} alt="Super Hero Makhana Man" className="hero-fly absolute top-[-25px] right-[-15px] md:right-[-60px]" width="150" />
+						<motion.img
+                src="/images/1.png"
+                alt="Super Hero Makhana Man"
+                className="hero-fly absolute top-[-25px] right-[-15px] md:right-[-90px]" 
+                width="150"
+                animate={{
+                  y: [0, -20, 0],
+                  x: [0, -30, 0],
+                  rotate: [0, -8, 0]
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              />
           </h2>
-          <button className="cta inline-block bg-[#B22B16] text-white px-6 py-2 rounded-md font-semibold">
-            Add to Cart
+          <button className="cta hover:bg-[#a83a25] inline-block bg-[#c14b33] text-[#f8f8f0] cursor-pointer text-[16px] px-6 py-2 rounded-md font-semibold">
+            View Products
           </button>
         </div>
       </motion.div>

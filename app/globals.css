@@ -102,12 +102,16 @@ transform:translateY(-10px);
 }
 
 .cta{
-background:#ff7a45;
-color:white;
 padding:14px 28px;
 border-radius:30px;
 }
 
+.hero-fly {
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));
+}
+.hero-character {
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));
+}
 .product-grid{
 display:grid;
 grid-template-columns:repeat(2,1fr);

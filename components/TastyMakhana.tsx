@@ -40,12 +40,16 @@ style={{
 initial={{opacity:0,x:-40}}
 whileInView={{opacity:1,x:0}}
 transition={{duration:0.6}}
+className=" flex flex-col items-center justify-center"
 >
 	<Link href="#">
     <img src="/images/14.png" alt="Classic Makhana" />
 	</Link>
 
     <h4 className="font-semibold font-family-cosmic-sans text-center mt-4 text-[#4b3f3f] text-[23px]">Classic</h4>
+    <button className="cta mt-6 hover:bg-[#a83a25] inline-block bg-[#c14b33] text-[#f8f8f0] cursor-pointer text-[16px] px-6 py-2 rounded-md font-semibold">
+        View Product
+    </button>   
 
 </motion.div>
 
@@ -81,12 +85,16 @@ transition={{duration:0.7}}
 initial={{opacity:0,x:-40}}
 whileInView={{opacity:1,x:0}}
 transition={{duration:0.6}}
+className=" flex flex-col items-center justify-center"
 >
 	<Link href="/products/regular-makhana">
     <img src="/images/13.png" alt="Regular Makhana" />
 	</Link>
 
     <h4 className="font-semibold font-family-cosmic-sans text-center mt-4 text-[#4b3f3f] text-[23px]">Regular</h4>
+    <button className="cta mt-6 hover:bg-[#a83a25] inline-block bg-[#c14b33] text-[#f8f8f0] cursor-pointer text-[16px] px-6 py-2 rounded-md font-semibold">
+        View Product
+    </button>   
 
 </motion.div>
 
