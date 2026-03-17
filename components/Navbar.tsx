@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react"
-
+import Link from "next/link"
 export default function Navbar() {
 
 const [menuOpen,setMenuOpen] = useState(false)
@@ -21,7 +21,9 @@ transition={{ duration: 0.8 }}
 
 {/* LOGO */}
 <div className="logo">
-<img src="/images/logo.png" width="150" height="100" alt="The Makhana Man Logo" />
+    <Link href="/">
+        <img src="/images/logo.png" width="150" height="100" alt="The Makhana Man Logo" />
+    </Link>
 </div>
 
 {/* HAMBURGER */}
@@ -36,7 +38,7 @@ onClick={()=>setMenuOpen(!menuOpen)}
 <ul className="hidden md:flex menu text-xl font-medium gap-8">
 <li><a href="/" className="text-comic-sans">Home</a></li>
 <li><a href="#" className="text-comic-sans">About</a></li>
-<li><a href="#" className="text-comic-sans">Products</a></li>
+<li><a href="/products" className="text-comic-sans">Products</a></li>
 <li><a href="#" className="text-comic-sans">Contact</a></li>
 </ul>
 

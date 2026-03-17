@@ -4,6 +4,7 @@ import { useEffect } from "react"
 import gsap from "gsap"
 import Reveal from "./Reveal"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 export default function HeroSection(){
 
@@ -86,9 +87,9 @@ return(
                 }}
               />
           </h2>
-          <button className="cta hover:bg-[#a83a25] inline-block bg-[#c14b33] text-[#f8f8f0] cursor-pointer text-[16px] px-6 py-2 rounded-md font-semibold">
+          <Link href="/products" className="cta hover:bg-[#a83a25] inline-block bg-[#c14b33] text-[#f8f8f0] cursor-pointer text-[16px] px-6 py-2 rounded-md font-semibold">
             View Products
-          </button>
+          </Link>
         </div>
       </motion.div>
 
