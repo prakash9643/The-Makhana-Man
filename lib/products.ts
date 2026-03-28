@@ -9,7 +9,7 @@ const apiClient = axios.create({
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
-    'Origin': 'http://localhost:3000' // Your Next.js URL
+    'Origin': 'https://the-makhana-man.vercel.app/' // Your Next.js URL
   },
   withCredentials: true
 })
