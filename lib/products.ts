@@ -1,7 +1,7 @@
 // lib/products.ts
 import axios, { AxiosError } from "axios"
 
-const API_URL = "http://localhost/the-makhana-man/wp-json/wc/v3"
+const API_URL = "https://aaronature.com/wp-json/wc/v3"
 
 // Create axios instance with default config
 const apiClient = axios.create({

@@ -2,7 +2,7 @@ import { Panel } from "@/types/panel";
 
 export async function getPanels(): Promise<Panel[]> {
   const res = await fetch(
-    "http://localhost/the-makhana-man/wp-json/wp/v2/about-panels?_embed",
+    "https://aaronature.com/wp-json/wp/v2/about-panels?_embed",
     { cache: "no-store" }
   );
 
