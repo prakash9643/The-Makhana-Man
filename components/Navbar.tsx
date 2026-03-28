@@ -37,7 +37,7 @@ onClick={()=>setMenuOpen(!menuOpen)}
 {/* DESKTOP MENU */}
 <ul className="hidden md:flex menu text-xl font-medium gap-8">
 <li><a href="/" className="text-comic-sans">Home</a></li>
-<li><a href="#" className="text-comic-sans">About</a></li>
+<li><a href="/about" className="text-comic-sans">About</a></li>
 <li><a href="/products" className="text-comic-sans">Products</a></li>
 <li><a href="#" className="text-comic-sans">Contact</a></li>
 </ul>
@@ -68,9 +68,9 @@ className="text-3xl"
 
 <li><a href="/" onClick={()=>setMenuOpen(false)}>Home</a></li>
 
-<li><a href="#" onClick={()=>setMenuOpen(false)}>About</a></li>
+<li><a href="/pages" onClick={()=>setMenuOpen(false)}>About</a></li>
 
-<li><a href="#" onClick={()=>setMenuOpen(false)}>Products</a></li>
+<li><a href="/products" onClick={()=>setMenuOpen(false)}>Products</a></li>
 
 <li><a href="#" onClick={()=>setMenuOpen(false)}>Contact</a></li>
 

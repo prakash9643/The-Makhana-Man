@@ -1,7 +1,7 @@
 import { getAllProducts, getProducts } from "@/lib/products"
 import Link from "next/link"
-import  Navbar  from "@/components/Navbar"
-import Footer from "@/components/Footer"
+// import  Navbar  from "@/components/Navbar"
+// import Footer from "@/components/Footer"
 import MakhanaStandard from "@/components/MakhanaStandard"
 
 export default async function ProductsPage(){
@@ -10,7 +10,6 @@ const products = await getAllProducts()
 
 return(
     <>
-<Navbar/>
 <section className="max-w-6xl mx-auto py-20 px-4  bg-[#fffcfa]">
 
 <h1 className="text-3xl font-bold mb-10 text-center">
@@ -52,7 +51,6 @@ className="mx-auto mb-4"
 
 </section>
 <MakhanaStandard/>
-<Footer/>
 </>
 )
 

@@ -1,6 +1,6 @@
 import { getProducts } from "@/lib/products"
-import  Navbar  from "@/components/Navbar"
-import Footer from "@/components/Footer"
+// import  Navbar  from "@/components/Navbar"
+// import Footer from "@/components/Footer"
 import MakhanaStandard from "@/components/MakhanaStandard"
 
 export default async function ProductPage({
@@ -14,7 +14,7 @@ export default async function ProductPage({
   const product = await getProducts(slug)
 return(
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
 
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-15 py-20 bg-[#fffcfa]">
 
@@ -59,7 +59,7 @@ return(
 
 </div>
 <MakhanaStandard/>
-<Footer/>
+{/* <Footer/> */}
 </>
 
 )

@@ -23,7 +23,7 @@ return(
 
 <div id="scroll-container">
 
-<Navbar/>
+{/* <Navbar/> */}
 <HeroSection/>
 <AboutSection/>
 <FloatingParticles/>
@@ -33,8 +33,8 @@ return(
 <MakingMakhana/>
 <MakhanaStandard/>
 <JunkFood/>
-<InsstaMakhana/>
-<Footer/>
+{/* <InsstaMakhana/> */}
+{/* <Footer/> */}
 
 </div>
 

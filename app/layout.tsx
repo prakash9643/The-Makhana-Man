@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Comic_Relief, Comic_Neue } from "next/font/google";
 import "./globals.css";
-
-
+import Footer from "@/components/Footer"
+import Navbar from "@/components/Navbar"
+import ClientLoaderWrapper from "@/components/ClientLoaderWrapper";
 export const metadata: Metadata = {
   title: "The Makhana Man",
   description: "The Makhana Man - Premium Makhana Products",
@@ -23,7 +23,11 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        {children}
+        <ClientLoaderWrapper>
+          <Navbar />
+          {children}
+          <Footer />
+        </ClientLoaderWrapper>
       </body>
     </html>
   );
