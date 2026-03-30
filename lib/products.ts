@@ -9,7 +9,7 @@ const apiClient = axios.create({
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
-    'Origin': 'https://the-makhana-man.vercel.app/' // Your Next.js URL
+    'Origin': 'https://aaronature.com/wp-json/wc/v3' // Your Next.js URL
   },
   withCredentials: true
 })
