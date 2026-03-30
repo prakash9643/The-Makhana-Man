@@ -2,6 +2,7 @@ import { getProducts } from "@/lib/products"
 // import  Navbar  from "@/components/Navbar"
 // import Footer from "@/components/Footer"
 import MakhanaStandard from "@/components/MakhanaStandard"
+import AddToCartButton from "@/components/AddToCartButton"
 
 export default async function ProductPage({
   params
@@ -12,6 +13,11 @@ export default async function ProductPage({
   const { slug } = await params
 
   const product = await getProducts(slug)
+  type Product = {
+  id: number;
+  name: string;
+  price: string;
+};
 return(
     <>
     {/* <Navbar/> */}
@@ -46,15 +52,15 @@ return(
 
         </p>
 
-        <a
+        {/* <a
         href={`http://localhost/the-makhana-man/checkout/?add-to-cart=${product.id}`}
         className="cta hover:bg-[#a83a25] inline-block bg-[#c14b33] text-[#f8f8f0] cursor-pointer text-[16px] px-6 py-2 rounded-md font-semibold mt-6"
         >
 
         Buy Now
 
-        </a>
-
+        </a> */}
+        <AddToCartButton product={product} />
         </div>
 
 </div>
