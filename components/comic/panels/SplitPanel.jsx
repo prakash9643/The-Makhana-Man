@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function SplitPanel({ data }) {
   return (
-    <section className="h-screen grid grid-cols-2 sticky top-0">
+    <section className="h-screen grid md:grid-cols-2 grid-cols-1 sticky top-0 px-4 md:px-0 py-8">
       
       <div
         className="flex items-center justify-center"

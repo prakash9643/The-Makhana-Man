@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function LeftText({ data }) {
   return (
     <section
-      className="h-screen flex items-center gap-8 justify-between px-16 sticky top-0"
+      className="md:h-screen flex flex-col md:flex-row items-center gap-8 justify-between md:px-16 px-4 sticky py-8 top-0"
       style={{ backgroundColor: data.bg_color }}
     >
       <motion.div

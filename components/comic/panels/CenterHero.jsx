@@ -15,7 +15,6 @@ export default function CenterHero({ data }) {
               text-[#4a403f]
               mb-3
               leading-tight tracking-tight
-              whitespace-nowrap
 							comic-relief-bold
 							hero-title"
           initial={{ scale: 0.6, opacity: 0 }}
@@ -25,7 +24,7 @@ export default function CenterHero({ data }) {
         </motion.h1>
 
         <motion.p
-          className="text-[#4b3f3f] md:text-[22.7px] text-[18px] text-bold font-family-cosmic-sans mb-4 md:pr-[150px] md:pl-[150px] pr-[70px] pl-[70px]"
+          className="text-[#4b3f3f] md:text-[22.7px] text-[18px] text-bold font-family-cosmic-sans mb-4 md:pr-[150px] md:pl-[150px] pr-[20px] pl-[20px]"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
         >

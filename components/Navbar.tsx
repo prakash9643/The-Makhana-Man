@@ -68,7 +68,7 @@ className="text-3xl"
 
 <li><a href="/" onClick={()=>setMenuOpen(false)}>Home</a></li>
 
-<li><a href="/pages" onClick={()=>setMenuOpen(false)}>About</a></li>
+<li><a href="/about" onClick={()=>setMenuOpen(false)}>About</a></li>
 
 <li><a href="/products" onClick={()=>setMenuOpen(false)}>Products</a></li>
 

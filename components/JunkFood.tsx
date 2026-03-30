@@ -16,7 +16,7 @@ style={{
 
 {/* GRID */}
 
-<div className="grid grid-cols-2 md:grid-cols-2 gap-12 items-start justify-between">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start justify-between">
 
 {/* LEFT SIDE */}
 
@@ -39,7 +39,7 @@ transition={{duration:0.6}}
 className="text-center mt-[50px]"
 >
 
-	<h4 className="font-semibold font-family-more-sugar mt-4 text-[#171011] text-[36px]">
+	<h4 className="font-semibold font-family-more-sugar mt-4 text-[#171011] md:text-[36px] text-[26px]">
 		⚠️ Side Effect: You might <br />
 				forget junk food forever.
 	</h4>

@@ -22,7 +22,7 @@ return(
     <>
     {/* <Navbar/> */}
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-15 py-20 bg-[#fffcfa]">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-15 py-20 px-8 bg-[#fffcfa]">
 
         <img
         src={product.images?.[0]?.src}
