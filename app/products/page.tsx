@@ -3,7 +3,7 @@ import Link from "next/link"
 // import  Navbar  from "@/components/Navbar"
 // import Footer from "@/components/Footer"
 import MakhanaStandard from "@/components/MakhanaStandard"
-
+export const dynamic = "force-dynamic";
 export default async function ProductsPage(){
 
 const products = await getAllProducts()

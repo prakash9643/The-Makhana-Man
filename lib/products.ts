@@ -1,11 +1,12 @@
 // lib/products.ts
 import axios, { AxiosError } from "axios"
 
-const API_URL = "https://aaronature.com/?rest_route=/wc/v3"
+const API_URL = "https://aaronature.com/wp-json/wc/v3"
 
 // Create axios instance with default config
 const apiClient = axios.create({
   baseURL: API_URL,
+  timeout: 10000, // 🔥 important
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
