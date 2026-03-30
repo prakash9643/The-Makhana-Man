@@ -87,7 +87,7 @@ export default function DistributorPage() {
     <>
     <section className="w-full relative">
         <img src="/images/become-distributor.jpeg" alt="Distributor" />        
-        <p className="mt-4 absolute top-[70%] left-[40%] text-[20px] text-bold font-family-more-sugar">
+        <p className="mt-4 md:absolute md:px-0 px-4 top-[70%] left-[40%] text-[20px] text-bold font-family-more-sugar">
           Join The Makhana Man and grow with healthy snacking 🌾
         </p>
     </section>
@@ -186,11 +186,11 @@ export default function DistributorPage() {
 						<h3 className="text-3xl font-bold mb-4 font-family-cosmic-sans">
 							Personal Information
 						</h3>
-						<div className="flex align-items-center justify-between gap-8">
+						<div className="flex align-items-center md:flex-row flex-col justify-between gap-8">
 							<input name="firstName" placeholder="First Name" onChange={handleChange} className="border p-3 rounded w-full" />
 							<input name="lastName" placeholder="Last Name" onChange={handleChange} className="border p-3 rounded w-full" />								
 						</div>
-						<div className="flex align-items-center justify-between gap-8">
+						<div className="flex align-items-center md:flex-row flex-col justify-between gap-8">
 							<input name="Age" placeholder="Age" onChange={handleChange} className="border p-3 rounded w-full" />
 							<input name="Qualification" placeholder="Qualificaton" onChange={handleChange} className="border p-3 rounded w-full" />								
 						</div>
@@ -200,15 +200,15 @@ export default function DistributorPage() {
 						<h3 className="text-3xl font-bold mb-4 font-family-cosmic-sans">
 							Contact Information
 						</h3>
-						<div className="flex align-items-center justify-between gap-8">
+						<div className="flex align-items-center md:flex-row flex-col justify-between gap-8">
 							<input name="phone" placeholder="Phone" onChange={handleChange} className="border w-full p-3 rounded" />
 							<input name="email" placeholder="Email" onChange={handleChange} className="border w-full p-3 rounded" />
 						</div>
-						<div className="flex align-items-center justify-between gap-8">
+						<div className="flex align-items-center md:flex-row flex-col justify-between gap-8">
 							<input name="City" placeholder="City" onChange={handleChange} className="border w-full p-3 rounded" />
 							<input name="Zip" placeholder="Zip" onChange={handleChange} className="border w-full p-3 rounded" />								
 						</div>						
-						<div className="flex align-items-center gap-8">
+						<div className="flex align-items-center md:flex-row flex-col gap-8">
 							<select className="border w-full p-3 rounded" onChange={handleChange}>
 								<option value="none">None</option>
 								<option value="india">India</option>
@@ -218,7 +218,7 @@ export default function DistributorPage() {
 								<option value="india">India</option>
 							</select>
 						</div>
-						<div className="flex align-items-center justify-between gap-8">
+						<div className="flex align-items-center md:flex-row flex-col justify-between gap-8">
 							<input name="district" placeholder="District" onChange={handleChange} className="border p-3 rounded w-full" />
 							<input name="companyName" placeholder="Company Name" onChange={handleChange} className="border p-3 rounded w-full" />
 						</div>
@@ -228,23 +228,23 @@ export default function DistributorPage() {
 						<h3 className="text-3xl font-bold mb-4 font-family-cosmic-sans">
 							Business Information
 						</h3>
-						<div className="flex align-items-center justify-between gap-8">
+						<div className="flex align-items-center md:flex-row flex-col justify-between gap-8">
 							<input name="business" placeholder="Current Nature of Business" onChange={handleChange} className="border w-full p-3 rounded" />
 							<input name="experience" placeholder="Experience In Current Bussiness (Years)" onChange={handleChange} className="border w-full p-3 rounded" />
 						</div>
-						<div className="flex align-items-center justify-between gap-8">
+						<div className="flex align-items-center md:flex-row flex-col justify-between gap-8">
 							<input name="businessType" placeholder="Business Type" onChange={handleChange} className="border w-full p-3 rounded" />
 							<input name="Revenue" placeholder="Annual Revenue" onChange={handleChange} className="border w-full p-3 rounded" />								
 						</div>
-						<div className="flex align-items-center justify-between gap-8">
+						<div className="flex align-items-center md:flex-row flex-col justify-between gap-8">
 							<input name="Brief" placeholder="Current Business Brief" onChange={handleChange} className="border p-3 rounded w-full" />
 							<input name="Infrastructure" placeholder="Infrastructure" onChange={handleChange} className="border p-3 rounded w-full" />
 						</div>
-						<div className="flex align-items-center justify-between gap-8">
+						<div className="flex align-items-center md:flex-row flex-col justify-between gap-8">
 							<input name="Vehicle" placeholder="Vehicle" onChange={handleChange} className="border p-3 rounded w-full" />
 							<input name="Investment" placeholder="Capacity Of Investment" onChange={handleChange} className="border p-3 rounded w-full" />
 						</div>
-						<div className="flex align-items-center justify-between gap-8">
+						<div className="flex align-items-center md:flex-row flex-col justify-between gap-8">
 							<input name="Manpower" placeholder="Existing Manpower" onChange={handleChange} className="border p-3 rounded w-full" />
 							<input name="Interested" placeholder="Why Are You Interested ?" onChange={handleChange} className="border p-3 rounded w-full" />
 						</div>
