@@ -1,7 +1,7 @@
 // lib/products.ts
 import axios, { AxiosError } from "axios"
 
-const API_URL = "https://aaronature.com/wp-json/wc/v3"
+const API_URL = "https://aaronature.com/?rest_route=/wc/v3"
 
 // Create axios instance with default config
 const apiClient = axios.create({
@@ -9,7 +9,6 @@ const apiClient = axios.create({
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
-    'Origin': 'https://aaronature.com/wp-json/wc/v3' // Your Next.js URL
   },
   withCredentials: true
 })
@@ -30,12 +29,13 @@ export async function getAllProducts() {
     console.log(`✅ ${response.data.length} products fetched`)
     return response.data
     
-  } catch (error: any) {
+  } catch (error: unknown) {
+    const err = error as AxiosError;
     console.error("Error fetching products:", {
-      message: error.message,
-      status: error.response?.status,
-      data: error.response?.data,
-      headers: error.response?.headers
+      message: err.message,
+      status: err.response?.status,
+      data: err.response?.data,
+      headers: err.response?.headers
     })
     
     // Try alternative method with different headers
