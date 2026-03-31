@@ -65,8 +65,9 @@ style={{
                 <h4 className="font-family-cosmic-sans relative text-[#4b3f3f] text-[19px] mb-4">QUICK LINKS</h4>
 
                 <ul className="space-y-2 text-gray-700">
-                <li><a href="#" className="text-[#4b3f3f] text-[14px] mb-2">Privacy Policy</a></li>
-                <li><a href="#" className="text-[#4b3f3f] text-[14px] mb-2">Terms & Conditions</a></li>
+                <li><a href="/terms-conditions" className="text-[#4b3f3f] text-[14px] mb-2">Terms & Conditions</a></li>
+                <li><a href="/privacy-policy" className="text-[#4b3f3f] text-[14px] mb-2">Privacy Policy</a></li>
+                <li><a href="/refund-return" className="text-[#4b3f3f] text-[14px] mb-2">Refund & Return Policy</a></li>
                 <li><a href="/become-distributor" className="text-[#4b3f3f] text-[14px] mb-2">Become our distributor</a></li>
                 </ul>
                 </motion.div>
