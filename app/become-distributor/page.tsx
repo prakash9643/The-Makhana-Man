@@ -86,7 +86,7 @@ export default function DistributorPage() {
   return (
     <>
     <section className="w-full relative">
-        <img src="/images/become-distributor.jpeg" alt="Distributor" />        
+        <img src="/images/become-distributor.jpeg" alt="Distributor" className="w-full" />        
         <p className="mt-4 md:absolute md:px-0 px-4 top-[70%] left-[40%] text-[20px] text-bold font-family-more-sugar">
           Join The Makhana Man and grow with healthy snacking 🌾
         </p>
