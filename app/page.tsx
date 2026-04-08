@@ -26,10 +26,10 @@ return(
 {/* <Navbar/> */}
 <HeroSection/>
 <AboutSection/>
+<TastyMakhana/>
 <FloatingParticles/>
 <ComicSection/>
 <WhyMakhanaMan />
-<TastyMakhana/>
 <MakingMakhana/>
 <MakhanaStandard/>
 <JunkFood/>
