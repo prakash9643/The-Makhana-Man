@@ -87,7 +87,7 @@ export default function ProductsSection() {
                     {products.map((p) => (
                         <motion.div
                             key={p.id}
-                            variants={cardVariants}
+                            // variants={cardVariants}
                             className="rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center sm:items-center gap-5 sm:gap-7 group transition-all duration-300 hover:-translate-y-1"
                             style={{
                                 backgroundColor: p.cardBg,
