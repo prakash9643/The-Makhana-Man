@@ -1,135 +1,99 @@
 "use client"
 
 import { motion } from "framer-motion"
-import Link from "next/link"
 
-export default function MakhanaStandard(){
+export default function MakhanaStandard() {
 
-return(
+  return (
 
-<section className="pt-[80px] bg-white relative pb-[80px] overflow-hidden" 
-style={{
-        background: "url('/images/makahna-bg.jpeg') no-repeat center/cover",
-    }}>
-
-<div className="max-w-6xl mx-auto px-4 relative">
-
-{/* TITLE */}
-<div className="flex flex-row items-center justify-center mb-12">
-<motion.h2
-    className="right-sidebar-new px-4 font-family-more-sugar relative text-[#3b6e8c] md:text-[32px]  text-[22px] font-bold mb-[40px]"
-    initial={{ y: -80, opacity: 0 }}
-    whileInView={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.8 }}
+    <section
+      className="pt-16 md:pt-20 pb-16 md:pb-20 relative overflow-hidden"
+       style={{ background: "linear-gradient(180deg, #f9f3ea 0%, #f9f3ea 70%, #e8f2ec 100%)" }}
     >
-    The Makhana Man Standard
-</motion.h2>
-</div>
 
+      <div className="max-w-screen-2xl mx-auto px-4 md:px-8 relative">
 
+        {/* TITLE */}
+        <div className="flex flex-row items-center justify-center mb-12">
+          <motion.h2
+            className="right-sidebar-new px-4 font-family-more-sugar relative text-[#3b6e8c] md:text-[32px] text-[22px] font-bold mb-[40px]"
+            initial={{ y: -80, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+          >
+            The Makhana Man Standard
+          </motion.h2>
+        </div>
 
-{/* GRID */}
+        {/* GRID */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center justify-between">
 
-<div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center justify-between">
+          <div className="space-y-10 text-green-600 flex flex-col items-center justify-center text-center">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <motion.img
+                src="/images/New_comics/9.png"
+                className="object-contain"
+                style={{ width: "150px", height: "150px" }}
+              />
+              <h4 className="font-semibold font-family-cosmic-sans mt-4 text-[#3b6e8c] text-[18px]">RICH TASTE</h4>
+            </motion.div>
+          </div>
 
-{/* LEFT SIDE */}
+          <div className="space-y-10 text-green-600 flex flex-col items-center justify-center text-center">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <motion.img
+                src="/images/New_comics/10.png"
+                className="object-contain"
+                style={{ width: "150px", height: "150px" }}
+              />
+              <h4 className="font-semibold font-family-cosmic-sans mt-4 text-[#3b6e8c] text-[18px]">HANDMADE</h4>
+            </motion.div>
+          </div>
 
-<div className="space-y-10 text-green-600 flex flex-col items-center justify-center text-center">
+          <div className="space-y-10 text-green-600 flex flex-col items-center justify-center text-center">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <motion.img
+                src="/images/New_comics/11.png"
+                className="object-contain"
+                style={{ width: "150px", height: "150px" }}
+              />
+              <h4 className="font-semibold font-family-cosmic-sans mt-4 text-[#3b6e8c] text-[18px]">PACKAGING</h4>
+            </motion.div>
+          </div>
 
-<motion.div
-initial={{opacity:0,x:-40}}
-whileInView={{opacity:1,x:0}}
-transition={{duration:0.6}}
->
-    <motion.img
-    src="/images/New_comics/9.png"
-    className="object-contain"
-    style={{
-        width: "150px",
-        height:"150px"
-    }}
-    />
+          <div className="space-y-10 text-green-600 flex flex-col items-center justify-center text-center">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <motion.img
+                src="/images/New_comics/12.png"
+                className="object-contain"
+                style={{ width: "150px", height: "150px" }}
+              />
+              <h4 className="font-semibold font-family-cosmic-sans mt-4 text-[#3b6e8c] text-[18px]">QUALITY</h4>
+            </motion.div>
+          </div>
 
-    <h4 className="font-semibold font-family-cosmic-sans mt-4 text-[#3b6e8c] text-[18px]">RICH TASTE</h4>
+        </div>
 
-</motion.div>
+      </div>
 
-</div>
+    </section>
 
-
-
-{/* LEFT SIDE */}
-
-<div className="space-y-10 text-green-600 flex flex-col items-center justify-center text-center">
-
-<motion.div
-initial={{opacity:0,x:-40}}
-whileInView={{opacity:1,x:0}}
-transition={{duration:0.6}}
->
-    <motion.img
-    src="/images/New_comics/10.png"
-    className="object-contain"
-    style={{
-        width: "150px",
-        height:"150px"
-    }}
-    />
-
-    <h4 className="font-semibold font-family-cosmic-sans mt-4 text-[#3b6e8c] text-[18px]">HANDMADE</h4>
-
-</motion.div>
-</div>
-
-<div className="space-y-10 text-green-600 flex flex-col items-center justify-center text-center">
-
-<motion.div
-initial={{opacity:0,x:-40}}
-whileInView={{opacity:1,x:0}}
-transition={{duration:0.6}}
->
-    <motion.img
-    src="/images/New_comics/11.png"
-    className="object-contain"
-    style={{
-        width: "150px",
-        height:"150px"
-    }}
-    />
-
-    <h4 className="font-semibold font-family-cosmic-sans mt-4 text-[#3b6e8c] text-[18px]">PACKAGING</h4>
-
-</motion.div>
-</div>
-<div className="space-y-10 text-green-600 flex flex-col items-center justify-center text-center">
-
-<motion.div
-initial={{opacity:0,x:-40}}
-whileInView={{opacity:1,x:0}}
-transition={{duration:0.6}}
->
-    <motion.img
-    src="/images/New_comics/12.png"
-    className="object-contain"
-    style={{
-        width: "150px",
-        height:"150px"
-    }}
-    />
-
-    <h4 className="font-semibold font-family-cosmic-sans mt-4 text-[#3b6e8c] text-[18px]">QUALITY</h4>
-
-</motion.div>
-</div>
-
-
-</div>
-
-
-</div>
-
-</section>
-
-)
+  )
 
 }

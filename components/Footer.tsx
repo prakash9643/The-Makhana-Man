@@ -5,117 +5,109 @@ import { motion } from "framer-motion"
 export default function Footer() {
   return (
     <>
-<section className="pt-[30px] bg-white relative pb-[30px] overflow-hidden" 
-style={{
-        background: "url('/images/makahna-bg.jpeg') no-repeat center/cover",
-    }}>
+    <section
+      className="pt-16 md:pt-20 pb-16 md:pb-20 relative overflow-hidden"
+      style={{ backgroundColor: "#f9f3ea" }}
+    >
+      <div className="max-w-screen-2xl mx-auto px-4 md:px-8 relative">
+
         <motion.footer
-            className="w-full py-12 px-6 md:px-16"
-            initial={{ opacity: 0, y: 80 }}
+          className="w-full"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+
+          {/* STORY TEXT */}
+          <motion.div
+            className="mb-10"
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-                >
+            transition={{ duration: 0.6 }}
+          >
+            <motion.h2
+              className="right-sidebar-new px-4 mb-2 font-family-cosmic-sans relative text-[#4b3f3f] text-[20px] font-bold"
+              initial={{ y: -80, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+            >
+              MAKHANA MAN'S STORY
+            </motion.h2>
 
-                {/* STORY TEXT */}
-                <motion.div
-                className="mb-10"
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                >
-                <motion.h2
-                    className="right-sidebar-new px-4 mb-2 font-family-cosmic-sans relative text-[#4b3f3f] text-[20px] font-bold"
-                    initial={{ y: -80, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.8 }}
-                    >
-                    MAKHANA MAN’S STORY
-                </motion.h2>
+            <p className="font-family-cosmic-sans px-4 relative text-[#4b3f3f] text-[16px]">
+              THE MAKAHANA MAN WAS BORN TO SAVE PEOPLE FROM <strong>UNHEALTHY</strong> SNACKS!
+            </p>
+          </motion.div>
 
-                <p className=" font-family-cosmic-sans px-4 relative text-[#4b3f3f] text-[16px]">
-                THE MAKAHANA MAN WAS BORN TO SAVE PEOPLE FROM <strong>UNHEALTHY</strong> SNACKS!
-                </p>
-                </motion.div>
+          {/* FOOTER GRID */}
+          <div className="grid md:grid-cols-4 gap-10 items-start">
 
-
-                {/* FOOTER GRID */}
-                <div className="grid md:grid-cols-4 gap-10 items-start">
-
-                {/* IMAGE */}
-                <motion.div
-                initial={{ opacity: 0, x: -80 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                >
-                <img
+            {/* IMAGE */}
+            <motion.div
+              initial={{ opacity: 0, x: -80 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <img
                 src="/images/17.png"
                 alt="Makhana Man"
                 className="w-[230px]"
-                />
-                </motion.div>
+              />
+            </motion.div>
 
-
-                {/* QUICK LINKS */}
-                <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7 }}
-                >
-                <h4 className="font-family-cosmic-sans relative text-[#4b3f3f] text-[19px] mb-4">QUICK LINKS</h4>
-
-                <ul className="space-y-2 text-gray-700">
+            {/* QUICK LINKS */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+            >
+              <h4 className="font-family-cosmic-sans relative text-[#4b3f3f] text-[19px] mb-4">QUICK LINKS</h4>
+              <ul className="space-y-2 text-gray-700">
                 <li><a href="/terms-conditions" className="text-[#4b3f3f] text-[14px] mb-2">Terms & Conditions</a></li>
                 <li><a href="/privacy-policy" className="text-[#4b3f3f] text-[14px] mb-2">Privacy Policy</a></li>
                 <li><a href="/refund-return" className="text-[#4b3f3f] text-[14px] mb-2">Refund & Return Policy</a></li>
                 <li><a href="/become-distributor" className="text-[#4b3f3f] text-[14px] mb-2">Become our distributor</a></li>
-                </ul>
-                </motion.div>
+              </ul>
+            </motion.div>
 
-
-                {/* PRODUCTS */}
-                <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.2 }}
-                >
-                <h4 className="font-family-cosmic-sans relative text-[#4b3f3f] text-[19px] mb-4">PRODUCTS</h4>
-
-                <ul className="space-y-2 text-gray-700">
+            {/* PRODUCTS */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+            >
+              <h4 className="font-family-cosmic-sans relative text-[#4b3f3f] text-[19px] mb-4">PRODUCTS</h4>
+              <ul className="space-y-2 text-gray-700">
                 <li><a href="/products/classic-makhana" className="text-[#4b3f3f] text-[14px] mb-2">CLASSIC</a></li>
                 <li><a href="/products/regular-makhana" className="text-[#4b3f3f] text-[14px] mb-2">REGULAR</a></li>
-                </ul>
-                </motion.div>
+              </ul>
+            </motion.div>
 
-
-                {/* SOCIAL */}
-                <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.7 }}
-                >
-                <h4 className="font-family-cosmic-sans relative text-[#4b3f3f] text-[19px] mb-4">FOLLOW US</h4>
-
-                <div className="flex gap-4 mb-4">
-
+            {/* SOCIAL */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.7 }}
+            >
+              <h4 className="font-family-cosmic-sans relative text-[#4b3f3f] text-[19px] mb-4">FOLLOW US</h4>
+              <div className="flex gap-4 mb-4">
                 <motion.img
-                src="/images/social-icons.png"
-                width="80"
-                whileHover={{ scale: 1.2 }}
+                  src="/images/social-icons.png"
+                  width="80"
+                  whileHover={{ scale: 1.2 }}
                 />
+              </div>
+              <p className="text-gray-700">CONTACT INFO :</p>
+            </motion.div>
 
-                </div>
+          </div>
 
-                <p className="text-gray-700">CONTACT INFO :</p>
+        </motion.footer>
 
-                </motion.div>
-
-                </div>
-
-                </motion.footer>
-
+      </div>
     </section>
-    <div className="created-by py-6 px-8 flex flex-col gap-4 md:flex-row items-center justify-between bg-[#000]">
+     <div className="created-by py-6 px-8 flex flex-col gap-4 md:flex-row items-center justify-between bg-[#000]">
       {/* SOCIAL */}
       <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
@@ -172,7 +164,6 @@ style={{
         <p className="text-[#fff]">Made By : <a href="https://banegabrand.com/" target="_blank"><u>Banegabrand.com</u></a></p>
       </motion.div>
     </div>
-</>
-
+    </>
   )
 }

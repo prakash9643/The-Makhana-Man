@@ -5,39 +5,41 @@ import HeroSection from "@/components/HeroSection"
 import FloatingParticles from "@/components/FloatingParticles"
 import AboutSection from "@/components/AboutSection"
 import ComicSection from "@/components/ComicSection"
-import WhyMakhanaMan from "@/components/WhyMakhanaMan"
-import TastyMakhana from "@/components/TastyMakhana"
 import MakingMakhana from "@/components/MakingMakhana"
-import ProductsSection from "@/components/ProductSection"
 import MakhanaStandard from "@/components/MakhanaStandard"
 import JunkFood from "@/components/JunkFood"
+
 import InsstaMakhana from "@/components/InsstaMakhana"
 import Footer from "@/components/Footer"
 import useSmoothScroll from "@/hooks/useSmoothScroll"
+import { StayCrunchy } from "@/components/StayCrunchy"
+import { WhyPickSection } from "@/components/WhyPickSection"
+import { WhyMakhanaMan } from "@/components/WhyMakhanaMan"
+import { TastyMakhana } from "@/components/TastyMakhana"
+import { HowItsMadeSection } from "@/components/HowItsMadeSection"
+import { SocialsReelSlider } from "@/components/Socialsreelslider"
 
-export default function Home(){
 
-useSmoothScroll()
+export default function Home() {
 
-return(
+    useSmoothScroll()
 
-<div id="scroll-container">
+    return (
 
-{/* <Navbar/> */}
-<HeroSection/>
-<AboutSection/>
-<TastyMakhana/>
-<FloatingParticles/>
-<ComicSection/>
-<WhyMakhanaMan />
-<MakingMakhana/>
-<MakhanaStandard/>
-<JunkFood/>
-{/* <InsstaMakhana/> */}
-{/* <Footer/> */}
+        <div id="scroll-container">
 
-</div>
-
-)
+            <HeroSection />
+            <AboutSection />
+            <StayCrunchy />
+            <WhyPickSection />
+            <WhyMakhanaMan />
+            <TastyMakhana />
+            <HowItsMadeSection />
+            <SocialsReelSlider />
+            <MakhanaStandard />
+            <JunkFood />
+            
+        </div>
+    )
 
 }

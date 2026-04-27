@@ -1,120 +1,78 @@
+
 "use client"
 
 import { motion } from "framer-motion"
-import Link from "next/link"
-export default function TastyMakhana(){
 
-return(
+const steps = [
+  { id: 1, number: "1", title: "SEED HARVEST", description: "", img: "/images/newui_comics/10.png" },
+  { id: 2, number: "2", title: "PHORI", description: "THIS IS THE PLACE WHERE PHORI WALAS CONVERT SEED TO MAKHANA", img: "/images/newui_comics/11.png" },
+  { id: 3, number: "3", title: "HYGIENIC PROCESSING & GRADING IN THE FACTORY", description: "", img: "/images/newui_comics/12.png" },
+  { id: 4, number: "4", title: "PACKAGING", description: "", img: "/images/newui_comics/13.png" },
+]
 
-<section className="pt-[80px] bg-white relative pb-[80px] overflow-hidden" 
-style={{
-        background: "url('/images/makahna-bg.jpeg') no-repeat center/cover",
-    }}>
-
-<div className="max-w-6xl mx-auto px-4 relative">
-
-{/* TITLE */}
-<div className="flex flex-row items-center justify-between">
-<motion.h2
-    className="right-sidebar-new px-4 font-family-more-sugar relative text-[#3b6e8c] md:text-[32px] text-[24px] font-bold mb-[40px]"
-    initial={{ y: -80, opacity: 0 }}
-    whileInView={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.8 }}
+export function TastyMakhana() {
+  return (
+    <section
+      className="pt-16 md:pt-20 pb-16 md:pb-20 relative overflow-hidden"
+       style={{ background: "linear-gradient(180deg, #f9f3ea 0%, #f9f3ea 70%, #e8f2ec 100%)" }}
     >
-    Our Tasty Makhana Snacks
-</motion.h2>
-</div>
+      <div className="max-w-screen-2xl mx-auto px-4 md:px-8 relative">
 
-
-
-{/* GRID */}
-
-<div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
-
-{/* LEFT SIDE */}
-
-<div className="space-y-10 text-green-600">
-
-<motion.div
-initial={{opacity:0,x:-40}}
-whileInView={{opacity:1,x:0}}
-transition={{duration:0.6}}
-className=" flex flex-col items-center justify-center"
->
-	<Link href="#">
-    <img src="/images/14.png" alt="Classic Makhana" />
-	</Link>
-
-    <h4 className="font-semibold font-family-cosmic-sans text-center mt-4 text-[#4b3f3f] text-[23px]">Classic</h4>
-    {/* <button className="cta mt-6 hover:bg-[#a83a25] inline-block bg-[#c14b33] text-[#f8f8f0] cursor-pointer text-[16px] px-6 py-2 rounded-md font-semibold">
-        View Product
-    </button>    */}
-    <Link
-        href="/products/classic-makhana"
-        className="cta mt-6 hover:bg-[#a83a25] inline-block bg-[#c14b33] text-[#f8f8f0] cursor-pointer text-[16px] px-6 py-2 rounded-md font-semibold"
+        {/* Header */}
+        <motion.div
+          className="mb-10 md:mb-14"
+          initial={{ opacity: 0, y: -24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
         >
+          <div className="flex items-stretch gap-3 mb-2">
+            <div className="w-1 rounded-full self-stretch bg-[#4bbfdf]" />
+            <h2 className="font-bold font-family-more-sugar text-[#7b5ea7] tracking-wide text-[20px] sm:text-[26px] md:text-[32px]">
+              HOW ITS MADE
+            </h2>
+          </div>
+          <p className="font-bold font-family-cosmic-sans uppercase leading-snug tracking-wide ml-4 text-[#7b5ea7] text-[13px] sm:text-[15px] md:text-[17px]">
+            Fuel your day with a snack that loves you back —<br />
+            Delicious and Nutritious!
+          </p>
+        </motion.div>
 
-        View Product
+        {/* Cards */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
+          {steps.map((step, i) => (
+            <motion.div
+              key={step.id}
+              className="flex flex-col rounded-[24px] p-3"
+              style={{ backgroundColor: "#3ecf6e" }}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.55, delay: i * 0.12 }}
+              whileHover={{ y: -6, scale: 1.02 }}
+            >
+              <div className="w-full overflow-hidden rounded-[14px]">
+                <img src={step.img} alt={step.title} className="w-full h-[160px] sm:h-[200px] md:h-[240px] object-cover" />
+              </div>
+              <div className="flex flex-col items-center justify-start text-center px-2 pt-3 pb-2 flex-1">
+                <span className="font-bold font-family-cosmic-sans text-[#1a1a1a] leading-none mb-1 text-[20px] sm:text-[26px] md:text-[32px]">
+                  {step.number}
+                </span>
+                <p className="font-bold font-family-more-sugar text-[#1a1a1a] tracking-wide leading-snug text-[11px] sm:text-[13px] md:text-[15px]">
+                  {step.title}
+                </p>
+                {step.description && (
+                  <p className="font-bold font-family-more-sugar text-[#1a1a1a] mt-1 leading-snug tracking-wide text-[10px] sm:text-[11px] md:text-[13px]">
+                    {step.description}
+                  </p>
+                )}
+              </div>
+            </motion.div>
+          ))}
+        </div>
 
-    </Link>
-
-</motion.div>
-
-</div>
-
-
-{/* CENTER IMAGE */}
-
-<motion.div
-className="flex flex-col justify-center items-center"
-initial={{scale:0}}
-whileInView={{scale:1}}
-transition={{duration:0.7}}
->
-
-<motion.h2
-    className="right-sidebar-new px-4 font-family-more-sugar relative text-[#4b3f3f] text-[24px] font-bold mb-[40px]"
-    initial={{ y: -80, opacity: 0 }}
-    whileInView={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.8 }}
-    >
-     THE MAKAHNA MAN ?
-</motion.h2>
-
-</motion.div>
-
-
-{/* RIGHT SIDE */}
-
-<div className="space-y-10 text-green-600">
-
-<motion.div
-initial={{opacity:0,x:-40}}
-whileInView={{opacity:1,x:0}}
-transition={{duration:0.6}}
-className=" flex flex-col items-center justify-center"
->
-	
-    <img src="/images/13.png" alt="Regular Makhana" />
-
-    <h4 className="font-semibold font-family-cosmic-sans text-center mt-4 text-[#4b3f3f] text-[23px]">Regular</h4>
-    <Link href="/products/regular-makhana"
-    className="cta mt-6 hover:bg-[#a83a25] inline-block bg-[#c14b33] text-[#f8f8f0] cursor-pointer text-[16px] px-6 py-2 rounded-md font-semibold"
-    >
-     View Product   
-        </Link>   
-
-</motion.div>
-
-</div>
-
-</div>
-
-
-</div>
-
-</section>
-
-)
-
+      </div>
+    </section>
+  )
 }
+
