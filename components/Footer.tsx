@@ -67,7 +67,7 @@ export default function Footer() {
                 <li><a href="/terms-conditions" className="text-[#4b3f3f] text-[14px] mb-2">Terms & Conditions</a></li>
                 <li><a href="/privacy-policy" className="text-[#4b3f3f] text-[14px] mb-2">Privacy Policy</a></li>
                 <li><a href="/refund-return" className="text-[#4b3f3f] text-[14px] mb-2">Refund & Return Policy</a></li>
-                <li><a href="/become-distributor" className="text-[#4b3f3f] text-[14px] mb-2">Become our distributor</a></li>
+                <li><a href="/distributor" className="text-[#4b3f3f] text-[14px] mb-2">Distributor</a></li>
               </ul>
             </motion.div>
 

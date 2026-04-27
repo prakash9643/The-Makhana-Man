@@ -10,6 +10,13 @@ const navLinks = [
   { label: "CONTACT", href: "#"         },
 ]
 
+const navMobileLinks = [
+  { label: "HOME",    href: "/"         },
+  { label: "ABOUT",   href: "/about"    },
+    { label: "CONTACT", href: "#"         },
+    { label: "PRODUCTS",   href: "/products"    },
+]
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [hidden, setHidden] = useState(false)
@@ -112,7 +119,7 @@ export default function Navbar() {
                   <button onClick={() => setMenuOpen(false)} className="text-2xl text-[#1A1A2E]">✕</button>
                 </div>
                 <ul className="flex flex-col gap-6">
-                  {navLinks.map((link) => (
+                  {navMobileLinks.map((link) => (
                     <li key={link.href}>
                       <a
                         href={link.href}
