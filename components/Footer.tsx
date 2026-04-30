@@ -68,6 +68,7 @@ export default function Footer() {
                 <li><a href="/privacy-policy" className="text-[#4b3f3f] text-[14px] mb-2">Privacy Policy</a></li>
                 <li><a href="/refund-return" className="text-[#4b3f3f] text-[14px] mb-2">Refund & Return Policy</a></li>
                 <li><a href="/distributor" className="text-[#4b3f3f] text-[14px] mb-2">Distributor</a></li>
+                 <li><a href="/private-labelling" className="text-[#4b3f3f] text-[14px] mb-2">Private Labelling</a></li>
               </ul>
             </motion.div>
 
@@ -114,7 +115,7 @@ export default function Footer() {
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.7 }}
       >
-        <p className="text-[#fff]">Mankkhana Man © 2026 | All rights reserved.</p>
+        <p className="text-[#fff]">Mankhana Man © 2026 | All rights reserved.</p>
       </motion.div>
       <motion.div
       initial={{ opacity: 0, scale: 0.8 }}

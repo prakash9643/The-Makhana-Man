@@ -8,12 +8,14 @@ const navLinks = [
   { label: "HOME",    href: "/"         },
   { label: "ABOUT",   href: "/about"    },
   { label: "CONTACT", href: "#"         },
+    { label: "SPECIALZATION", href: "/sevensuta"         },
 ]
 
 const navMobileLinks = [
   { label: "HOME",    href: "/"         },
   { label: "ABOUT",   href: "/about"    },
     { label: "CONTACT", href: "#"         },
+     { label: "SPECIALZATION", href: "/sevensuta"         },
     { label: "PRODUCTS",   href: "/products"    },
 ]
 
