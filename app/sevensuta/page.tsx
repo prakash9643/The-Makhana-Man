@@ -17,10 +17,9 @@ export default function sevensuta() {
   return (
     <div id="scroll-container" className="mt-[110px]">
       <SevenSutaHero />
-      < ManifestoSection />
-
+      <ManifestoSection />
       <GradeAboveGradeSection />
-            <WhereItComesFromSection /> 
+      <WhereItComesFromSection />
       <VerifiedVoicesSection />
       <ChoiceIsClearSection />
     </div>

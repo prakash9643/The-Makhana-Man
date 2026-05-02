@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Footer from "@/components/Footer"
-import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import ClientLoaderWrapper from "@/components/ClientLoaderWrapper";
+
 export const metadata: Metadata = {
   title: "The Makhana Man",
   description: "The Makhana Man - Premium Makhana Products",
@@ -16,13 +17,46 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet"></link>
+        {/* ── MoreSugar Preloads ── */}
+        <link
+          rel="preload"
+          href="/fonts/more-sugar/MoreSugar-Regular.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/more-sugar/MoreSugar-Thin.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+
+        {/* ── ComicSans Preloads ── */}
+        <link
+          rel="preload"
+          href="/fonts/LDF-ComicSans/LDFComicSansBold.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/LDF-ComicSans/LDFComicSans.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/LDF-ComicSans/LDFComicSansLight.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
       </head>
-      <body
-        className={`antialiased`}
-      >
+      <body className="antialiased">
         <ClientLoaderWrapper>
           <Navbar />
           {children}
