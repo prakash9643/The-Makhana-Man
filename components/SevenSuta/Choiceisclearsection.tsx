@@ -77,9 +77,8 @@ export function ChoiceIsClearSection() {
         aria-hidden="true"
       >
         <span
-          className="font-bold uppercase whitespace-nowrap"
+          className="font-bold uppercase whitespace-nowrap font-family-more-sugar"
           style={{
-            fontFamily: "'More Sugar', cursive",
             fontSize: "clamp(70px, 16vw, 200px)",
             opacity: 0.04,
             color: "#ffffff",
@@ -103,9 +102,8 @@ export function ChoiceIsClearSection() {
         >
           <div className="w-1 h-5 rounded-full flex-shrink-0" style={{ backgroundColor: "#f5c842" }} />
           <span
-            className="font-bold uppercase tracking-widest"
+            className="font-bold uppercase tracking-widest font-family-more-sugar"
             style={{
-              fontFamily: "'More Sugar', cursive",
               fontSize: "clamp(10px, 1.6vw, 12px)",
               color: "#f5c842",
             }}
@@ -117,9 +115,8 @@ export function ChoiceIsClearSection() {
 
         {/* Heading */}
         <motion.h2
-          className="font-bold uppercase leading-[1.0] text-white mb-5"
+          className="font-bold uppercase leading-[1.0] text-white mb-5 font-family-more-sugar"
           style={{
-            fontFamily: "'More Sugar', cursive",
             fontSize: "clamp(36px, 7vw, 88px)",
           }}
           initial={{ opacity: 0, y: -20 }}
@@ -141,9 +138,8 @@ export function ChoiceIsClearSection() {
           {PILLS.map((pill, i) => (
             <span
               key={i}
-              className="font-bold uppercase tracking-widest px-4 py-1.5 rounded-full"
+              className="font-bold uppercase tracking-widest px-4 py-1.5 rounded-full font-family-more-sugar"
               style={{
-                fontFamily: "'More Sugar', cursive",
                 fontSize: "clamp(11px, 1.8vw, 14px)",
                 backgroundColor: "rgba(255,255,255,0.12)",
                 color: "#ffffff",
@@ -158,9 +154,8 @@ export function ChoiceIsClearSection() {
 
         {/* Body copy */}
         <motion.p
-          className="font-bold uppercase leading-relaxed tracking-wide text-white/75 max-w-2xl mb-10"
+          className="font-bold uppercase leading-relaxed tracking-wide text-white/75 max-w-2xl mb-10 font-family-more-sugar"
           style={{
-            fontFamily: "'More Sugar', cursive",
             fontSize: "clamp(11px, 1.8vw, 15px)",
           }}
           initial={{ opacity: 0, y: 12 }}
@@ -186,9 +181,8 @@ export function ChoiceIsClearSection() {
           {/* Primary CTA */}
           <Link
             href="/products"
-            className="group relative inline-flex items-center gap-2 font-bold uppercase tracking-widest px-8 py-4 rounded-full overflow-hidden transition-all duration-300"
+            className="font-family-more-sugar group relative inline-flex items-center gap-2 font-bold uppercase tracking-widest px-8 py-4 rounded-full overflow-hidden transition-all duration-300"
             style={{
-              fontFamily: "'More Sugar', cursive",
               fontSize: "clamp(11px, 1.8vw, 14px)",
               backgroundColor: "#f5c842",
               color: "#0a3d26",
@@ -207,9 +201,8 @@ export function ChoiceIsClearSection() {
             href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20order%207%20Suta%20Makhana"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 font-bold uppercase tracking-widest px-8 py-4 rounded-full transition-all duration-300"
+            className="font-family-more-sugar group inline-flex items-center gap-2 font-bold uppercase tracking-widest px-8 py-4 rounded-full transition-all duration-300"
             style={{
-              fontFamily: "'More Sugar', cursive",
               fontSize: "clamp(11px, 1.8vw, 14px)",
               backgroundColor: "transparent",
               color: "#ffffff",
@@ -240,9 +233,8 @@ export function ChoiceIsClearSection() {
             <circle cx="18.5" cy="18.5" r="2.5"/>
           </svg>
           <p
-            className="font-bold uppercase tracking-widest"
+            className="font-bold uppercase tracking-widest font-family-more-sugar"
             style={{
-              fontFamily: "'More Sugar', cursive",
               fontSize: "clamp(9px, 1.4vw, 11px)",
               color: "rgba(255,255,255,0.5)",
             }}

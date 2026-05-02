@@ -111,11 +111,11 @@ body {
 }
 
 .font-family-cosmic-sans {
-  font-family: "ComicSans", "ComicSans-Fallback", sans-serif;
+ font-family: "ComicSans", "ComicSans-Fallback", sans-serif !important;
 }
 
 .font-family-more-sugar {
-  font-family: "MoreSugar", "MoreSugar-Fallback", cursive;
+ font-family: "MoreSugar", "MoreSugar-Fallback", cursive !important;
 }
 
 /* ── LAYOUT ───────────────────────────────────────────────────────────────── */

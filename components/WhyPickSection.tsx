@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { useEffect, useState } from "react"
 
 const features = [
   "FARM FRESH ORIGINS",
@@ -11,10 +12,19 @@ const features = [
 ]
 
 export function WhyPickSection() {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768)
+    check()
+    window.addEventListener("resize", check)
+    return () => window.removeEventListener("resize", check)
+  }, [])
+
   return (
     <section
       className="pt-16 md:pt-20 pb-16 md:pb-20"
-       style={{ background: "linear-gradient(180deg, #f9f3ea 0%, #f9f3ea 70%, #e8f2ec 100%)" }}
+      style={{ background: "linear-gradient(180deg, #f9f3ea 0%, #f9f3ea 70%, #e8f2ec 100%)" }}
     >
       <div className="max-w-screen-2xl mx-auto px-4 md:px-8">
 
@@ -57,8 +67,8 @@ export function WhyPickSection() {
               src="/images/newui_comics/8.png"
               alt="Makhana Man Superhero"
               className="w-36 md:w-52 lg:w-56 object-contain flex-shrink-0"
-              animate={{ y: [0, -12, 0] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              animate={isMobile ? {} : { y: [0, -12, 0] }}
+              transition={isMobile ? {} : { duration: 3, repeat: Infinity, ease: "easeInOut" }}
             />
             <motion.ul className="flex flex-col gap-3">
               {features.map((item, i) => (

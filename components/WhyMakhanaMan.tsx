@@ -1,4 +1,3 @@
-
 "use client"
 
 import { motion } from "framer-motion"
@@ -44,10 +43,10 @@ export function WhyMakhanaMan() {
           >
             <div className="w-1 rounded-full self-stretch bg-[#6f8839]" />
             <div>
-              <h2 className="font-bold leading-tight font-more-sugar text-[#3b6e8c] text-[20px] sm:text-[26px] md:text-[32px] mb-2">
+              <h2 className="font-bold leading-tight font-family-more-sugar text-[#3b6e8c] text-[20px] sm:text-[26px] md:text-[32px] mb-2">
                 WHY THE MAKHANA MAN?
               </h2>
-              <p className="font-semibold font-more-sugar text-[#5da30c] text-[13px] sm:text-[15px] md:text-[17px]">
+              <p className="font-semibold font-family-more-sugar text-[#5da30c] text-[13px] sm:text-[15px] md:text-[17px]">
                 Being a specialist in 7 Soota Makhana
               </p>
             </div>
@@ -71,20 +70,20 @@ export function WhyMakhanaMan() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.15 }}
         >
-          <p className="font-semibold font-more-sugar text-[#3b6e8c] text-[13px] sm:text-[15px] md:text-[17px] mb-1">
+          <p className="font-semibold font-family-more-sugar text-[#3b6e8c] text-[13px] sm:text-[15px] md:text-[17px] mb-1">
             DO YOU KNOW WHAT IS SUTA IN MAKHANA?
           </p>
           <div className="flex items-center justify-center gap-2 flex-wrap mb-2">
-            <span className="font-semibold font-more-sugar text-[#5da30c] text-[13px] sm:text-[15px] md:text-[17px]">
+            <span className="font-semibold font-family-more-sugar text-[#5da30c] text-[13px] sm:text-[15px] md:text-[17px]">
               KNOW THE DIFFERENCE, KNOW THE MAKHANA
             </span>
-            <span className="text-white font-semibold font-more-sugar text-[13px] sm:text-[14px] md:text-[16px] px-4 py-1 rounded-full bg-[#c14b33]">
+            <span className="text-white font-semibold font-family-more-sugar text-[13px] sm:text-[14px] md:text-[16px] px-4 py-1 rounded-full bg-[#c14b33]">
               .KNOW FROM US
             </span>
           </div>
         </motion.div>
 
-        {/* Suta comparison — unchanged */}
+        {/* Suta comparison */}
         <div className="comparison-wrap">
 
           <motion.div className="relative flex flex-col items-center"
@@ -92,7 +91,7 @@ export function WhyMakhanaMan() {
             viewport={{ once: true }} transition={{ duration: 0.5 }}>
             <span className="absolute text-[24px] md:text-[34px] text-[#e74c6a] leading-none z-[2] heart-pos">♥</span>
             <div className="label-left-7">
-              <span className="font-semibold font-more-sugar text-[#1a1a1a] whitespace-nowrap text-[13px] md:text-[17px]">7 SUTA</span>
+              <span className="font-semibold font-family-more-sugar text-[#1a1a1a] whitespace-nowrap text-[13px] md:text-[17px]">7 SUTA</span>
               <DoubleArrow height={148} />
             </div>
             <motion.img src="/images/10.png" alt="7 Suta Makhana" className="w-[100px] md:w-[160px] object-contain"
@@ -102,7 +101,7 @@ export function WhyMakhanaMan() {
           <motion.div className="flex flex-col items-center"
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}>
-            <span className="font-semibold font-more-sugar text-[#1a1a1a] mb-[6px] whitespace-nowrap text-[13px] md:text-[17px]">6 SUTA</span>
+            <span className="font-semibold font-family-more-sugar text-[#1a1a1a] mb-[6px] whitespace-nowrap text-[13px] md:text-[17px]">6 SUTA</span>
             <div className="flex flex-row items-end gap-[6px]">
               <DoubleArrow height={110} />
               <motion.img src="/images/10.png" alt="6 Suta Makhana" className="w-[72px] md:w-[116px] object-contain"
@@ -113,7 +112,7 @@ export function WhyMakhanaMan() {
           <motion.div className="flex flex-col items-center"
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }}>
-            <span className="font-semibold font-more-sugar text-[#1a1a1a] mb-[6px] whitespace-nowrap text-[13px] md:text-[17px]">5 SUTA</span>
+            <span className="font-semibold font-family-more-sugar text-[#1a1a1a] mb-[6px] whitespace-nowrap text-[13px] md:text-[17px]">5 SUTA</span>
             <div className="flex flex-row items-end gap-[6px]">
               <DoubleArrow height={80} />
               <motion.img src="/images/10.png" alt="5 Suta Makhana" className="w-[52px] md:w-[84px] object-contain"
@@ -129,13 +128,13 @@ export function WhyMakhanaMan() {
               <motion.img src="/images/10.png" alt="4 Suta Makhana" className="w-[34px] md:w-[54px] object-contain"
                 animate={{ y: [0, -4, 0] }} transition={{ duration: 3.9, repeat: Infinity, ease: "easeInOut" }} />
             </div>
-            <span className="label-right-4 font-semibold font-more-sugar text-[#1a1a1a] whitespace-nowrap text-[13px] md:text-[17px]">4 SUTA</span>
+            <span className="label-right-4 font-semibold font-family-more-sugar text-[#1a1a1a] whitespace-nowrap text-[13px] md:text-[17px]">4 SUTA</span>
           </motion.div>
 
         </div>
 
         <motion.p
-          className="text-center font-semibold font-more-sugar tracking-[0.04em] mt-[14px] text-[#1a1a1a] text-[13px] sm:text-[15px] md:text-[17px]"
+          className="text-center font-semibold font-family-more-sugar tracking-[0.04em] mt-[14px] text-[#1a1a1a] text-[13px] sm:text-[15px] md:text-[17px]"
           initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
           viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.4 }}
         >
@@ -148,7 +147,7 @@ export function WhyMakhanaMan() {
       <div className="overflow-hidden bg-[#1a5c3a] py-[10px] my-10">
         <div className="flex w-max marquee-animate">
           {Array(10).fill(null).map((_, i) => (
-            <span key={i} className="flex items-center gap-3 px-8 text-white font-semibold font-more-sugar whitespace-nowrap text-[13px] sm:text-[15px] md:text-[17px]">
+            <span key={i} className="flex items-center gap-3 px-8 text-white font-semibold font-family-more-sugar whitespace-nowrap text-[13px] sm:text-[15px] md:text-[17px]">
               <span className="inline-block w-2 h-2 rounded-full bg-white opacity-60" />
               {MARQUEE_TEXT}
             </span>
@@ -166,7 +165,6 @@ export function WhyMakhanaMan() {
 
       <style>{`
         .section-bg { background: #f9f3ea; }
-        .font-more-sugar { font-family: 'More Sugar', cursive; }
         .comparison-wrap {
           display: flex; align-items: flex-end; justify-content: center;
           gap: 12px; padding-top: 50px; padding-bottom: 4px;
@@ -194,5 +192,3 @@ export function WhyMakhanaMan() {
     </section>
   )
 }
-
-

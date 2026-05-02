@@ -30,9 +30,8 @@ export function WhereItComesFromSection() {
         aria-hidden="true"
       >
         <span
-          className="font-bold uppercase whitespace-nowrap text-[#1A1A2E]"
+          className="font-bold uppercase whitespace-nowrap text-[#1A1A2E] font-family-more-sugar"
           style={{
-            fontFamily: "'More Sugar', cursive",
             fontSize: "clamp(60px, 14vw, 190px)",
             opacity: 0.03,
             letterSpacing: "0.04em",
@@ -58,8 +57,7 @@ export function WhereItComesFromSection() {
             >
               <div className="w-1 h-6 bg-[#046b46] rounded-full flex-shrink-0" />
               <span
-                className="font-bold uppercase tracking-widest text-[#046b46] text-[12px] sm:text-[13px]"
-                style={{ fontFamily: "'More Sugar', cursive" }}
+                className="font-bold uppercase tracking-widest text-[#046b46] text-[12px] sm:text-[13px] font-family-more-sugar"
               >
                 Where Our Makhana Comes From
               </span>
@@ -67,9 +65,8 @@ export function WhereItComesFromSection() {
 
             {/* Headline */}
             <motion.h2
-              className="font-bold uppercase leading-[1.0] text-[#1A1A2E] mb-5"
+              className="font-bold uppercase leading-[1.0] text-[#1A1A2E] mb-5 font-family-more-sugar"
               style={{
-                fontFamily: "'More Sugar', cursive",
                 fontSize: "clamp(32px, 5vw, 56px)",
               }}
               initial={{ opacity: 0, x: -30 }}
@@ -89,8 +86,7 @@ export function WhereItComesFromSection() {
             ].map((para, i) => (
               <motion.p
                 key={i}
-                className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] mb-4 text-[12px] sm:text-[13px] md:text-[14px] max-w-[520px]"
-                style={{ fontFamily: "'More Sugar', cursive" }}
+                className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] mb-4 text-[12px] sm:text-[13px] md:text-[14px] max-w-[520px] font-family-more-sugar"
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -113,9 +109,8 @@ export function WhereItComesFromSection() {
                   <div className="flex items-center gap-1.5">
                     <StarDot />
                     <span
-                      className="font-bold text-[#046b46]"
+                      className="font-bold text-[#046b46] font-family-more-sugar"
                       style={{
-                        fontFamily: "'More Sugar', cursive",
                         fontSize: "clamp(18px, 3vw, 26px)",
                       }}
                     >
@@ -123,9 +118,8 @@ export function WhereItComesFromSection() {
                     </span>
                   </div>
                   <span
-                    className="font-bold uppercase text-[#4b3f3f] tracking-widest leading-tight whitespace-pre-line"
+                    className="font-bold uppercase text-[#4b3f3f] tracking-widest leading-tight whitespace-pre-line font-family-more-sugar"
                     style={{
-                      fontFamily: "'More Sugar', cursive",
                       fontSize: "clamp(9px, 1.3vw, 10px)",
                     }}
                   >
@@ -162,7 +156,6 @@ export function WhereItComesFromSection() {
                   alt="Bihar map — Mithilanchal region"
                   className="w-full h-auto object-cover"
                 />
-
               </div>
             </div>
           </motion.div>

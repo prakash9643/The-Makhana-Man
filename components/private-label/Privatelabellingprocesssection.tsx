@@ -134,9 +134,8 @@ export function PrivateLabellingProcessSection() {
       <div className="max-w-screen-2xl mx-auto px-6 md:px-12 xl:px-20 pt-16 md:pt-20 pb-16 md:pb-20">
 
         <motion.h2
-          className="text-center font-bold mb-14 text-[#7b2d8b]"
+          className="text-center font-bold mb-14 text-[#7b2d8b] font-family-more-sugar"
           style={{
-            fontFamily: "'More Sugar', 'Bangers', cursive",
             fontSize: "clamp(20px, 2.2vw, 32px)",
           }}
           initial={{ opacity: 0, y: -16 }}
@@ -198,9 +197,8 @@ export function PrivateLabellingProcessSection() {
                   transition={{ duration: 0.45, delay: 0.2 + i * 0.1 }}
                 >
                   <p
-                    className="font-bold mb-[3px]"
+                    className="font-bold mb-[3px] font-family-more-sugar"
                     style={{
-                      fontFamily: "'More Sugar', 'Bangers', cursive",
                       fontSize: "clamp(11px, 0.9vw, 13px)",
                       color: "#7b2d8b",
                       letterSpacing: "0.04em",
@@ -209,18 +207,16 @@ export function PrivateLabellingProcessSection() {
                     {step.num}
                   </p>
                   <p
-                    className="font-bold leading-snug mb-1 text-[#7b2d8b]"
+                    className="font-bold leading-snug mb-1 text-[#7b2d8b] font-family-more-sugar"
                     style={{
-                      fontFamily: "'More Sugar', 'Bangers', cursive",
                       fontSize: "clamp(12px, 1vw, 15px)",
                     }}
                   >
                     {step.title}
                   </p>
                   <p
-                    className="text-[#4b3f3f] leading-relaxed"
+                    className="text-[#4b3f3f] leading-relaxed font-family-cosmic-sans"
                     style={{
-                      fontFamily: "'Cosmic Sans', 'Comic Sans MS', cursive",
                       fontSize: "clamp(10px, 0.8vw, 12px)",
                     }}
                   >
@@ -250,9 +246,9 @@ export function PrivateLabellingProcessSection() {
                 {step.icon}
               </motion.div>
               <div className="pt-1">
-                <p className="font-bold text-[12px] mb-[2px]" style={{ fontFamily: "'More Sugar','Bangers',cursive", color: "#7b2d8b" }}>{step.num}</p>
-                <p className="font-bold text-[13px] text-[#1A1A2E]" style={{ fontFamily: "'More Sugar','Bangers',cursive" }}>{step.title}</p>
-                <p className="text-[11px] text-[#4b3f3f]" style={{ fontFamily: "'Cosmic Sans','Comic Sans MS',cursive" }}>{step.desc}</p>
+                <p className="font-bold text-[12px] mb-[2px] font-family-more-sugar" style={{ color: "#7b2d8b" }}>{step.num}</p>
+                <p className="font-bold text-[13px] text-[#1A1A2E] font-family-more-sugar">{step.title}</p>
+                <p className="text-[11px] text-[#4b3f3f] font-family-cosmic-sans">{step.desc}</p>
               </div>
             </div>
           ))}
@@ -264,9 +260,8 @@ export function PrivateLabellingProcessSection() {
         <div className="max-w-screen-2xl mx-auto px-6 md:px-12 xl:px-20">
 
           <motion.h2
-            className="text-center font-bold mb-12 text-[#7b2d8b]"
+            className="text-center font-bold mb-12 text-[#7b2d8b] font-family-more-sugar"
             style={{
-              fontFamily: "'More Sugar', 'Bangers', cursive",
               fontSize: "clamp(20px, 2.2vw, 32px)",
             }}
             initial={{ opacity: 0, y: -16 }}
@@ -298,9 +293,8 @@ export function PrivateLabellingProcessSection() {
 
                 <div>
                   <p
-                    className="font-bold leading-snug mb-1"
+                    className="font-bold leading-snug mb-1 font-family-more-sugar"
                     style={{
-                      fontFamily: "'More Sugar', 'Bangers', cursive",
                       fontSize: "clamp(12px, 1vw, 14px)",
                       color: "#7b2d8b",
                     }}
@@ -308,9 +302,8 @@ export function PrivateLabellingProcessSection() {
                     {item.title}
                   </p>
                   <p
-                    className="text-[#4b3f3f] leading-relaxed"
+                    className="text-[#4b3f3f] leading-relaxed font-family-cosmic-sans"
                     style={{
-                      fontFamily: "'Cosmic Sans', 'Comic Sans MS', cursive",
                       fontSize: "clamp(10px, 0.8vw, 12px)",
                     }}
                   >

@@ -76,9 +76,8 @@ export function PrivateLabellingHero() {
             transition={{ duration: 0.7 }}
           >
             <h1
-              className="font-black uppercase leading-none mb-2 text-[#7B2D8B]"
+              className="font-black uppercase leading-none mb-2 text-[#7B2D8B] font-family-more-sugar"
               style={{
-                fontFamily: "'More Sugar', 'Bangers', cursive",
                 fontSize: "clamp(28px, 5vw, 52px)",
                 letterSpacing: "0.01em",
               }}
@@ -86,9 +85,8 @@ export function PrivateLabellingHero() {
               Private<br />Labelling
             </h1>
             <p
-              className="font-bold uppercase mb-4 text-[#1A1A2E]"
+              className="font-bold uppercase mb-4 text-[#1A1A2E] font-family-more-sugar"
               style={{
-                fontFamily: "'More Sugar', 'Bangers', cursive",
                 fontSize: "clamp(11px, 1.4vw, 15px)",
                 letterSpacing: "0.06em",
               }}
@@ -96,9 +94,8 @@ export function PrivateLabellingHero() {
               Your Brand, Our Quality Makhana
             </p>
             <p
-              className="mb-6 text-[#4b3f3f] leading-relaxed"
+              className="mb-6 text-[#4b3f3f] leading-relaxed font-family-cosmic-sans"
               style={{
-                fontFamily: "'Cosmic Sans', 'Comic Sans MS', cursive",
                 fontSize: "clamp(12px, 1.1vw, 14px)",
               }}
             >
@@ -106,10 +103,9 @@ export function PrivateLabellingHero() {
             </p>
 
             <motion.button
-              className="inline-flex items-center gap-2 px-6 py-3 font-bold uppercase tracking-widest text-white rounded-lg"
+              className="inline-flex items-center gap-2 px-6 py-3 font-bold uppercase tracking-widest text-white rounded-lg font-family-more-sugar"
               style={{
                 backgroundColor: "#7B2D8B",
-                fontFamily: "'More Sugar', 'Bangers', cursive",
                 fontSize: "clamp(12px, 1.1vw, 14px)",
                 letterSpacing: "0.08em",
               }}
@@ -165,9 +161,8 @@ export function PrivateLabellingHero() {
 
                 <div>
                   <p
-                    className="font-bold text-[#1A1A2E] leading-snug"
+                    className="font-bold text-[#1A1A2E] leading-snug font-family-more-sugar"
                     style={{
-                      fontFamily: "'More Sugar', 'Bangers', cursive",
                       fontSize: "clamp(12px, 1.15vw, 15px)",
                       letterSpacing: "0.02em",
                     }}
@@ -175,9 +170,8 @@ export function PrivateLabellingHero() {
                     {f.title}
                   </p>
                   <p
-                    className="text-[#4b3f3f]"
+                    className="text-[#4b3f3f] font-family-cosmic-sans"
                     style={{
-                      fontFamily: "'Cosmic Sans', 'Comic Sans MS', cursive",
                       fontSize: "clamp(11px, 0.9vw, 13px)",
                     }}
                   >

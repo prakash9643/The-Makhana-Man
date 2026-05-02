@@ -24,9 +24,8 @@ export function PartnerCTASection() {
           {/* ── MOBILE layout (< sm) ── */}
           <div className="flex sm:hidden flex-col items-center text-center px-5 pt-8 pb-6">
             <h2
-              className="font-black text-[#7b2d8b] leading-tight mb-2"
+              className="font-black text-[#7b2d8b] leading-tight mb-2 font-family-more-sugar"
               style={{
-                fontFamily: "'More Sugar', 'Bangers', cursive",
                 fontSize: "clamp(22px, 6vw, 28px)",
                 letterSpacing: "0.01em",
               }}
@@ -34,9 +33,8 @@ export function PartnerCTASection() {
               Let's Build Something Healthy Together!
             </h2>
             <p
-              className="text-[#7b2d8b] mb-5"
+              className="text-[#7b2d8b] mb-5 font-family-cosmic-sans"
               style={{
-                fontFamily: "'Cosmic Sans', 'Comic Sans MS', cursive",
                 fontSize: "13px",
                 lineHeight: "1.5",
               }}
@@ -44,10 +42,9 @@ export function PartnerCTASection() {
               Partner with The Makhana Man and bring your brand vision to life.
             </p>
             <motion.button
-              className="px-6 py-2.5 rounded-xl font-bold text-white uppercase tracking-widest"
+              className="px-6 py-2.5 rounded-xl font-bold text-white uppercase tracking-widest font-family-more-sugar"
               style={{
                 backgroundColor: "#7b2d8b",
-                fontFamily: "'More Sugar', 'Bangers', cursive",
                 fontSize: "12px",
                 letterSpacing: "0.08em",
               }}
@@ -90,9 +87,8 @@ export function PartnerCTASection() {
             >
               <div>
                 <h2
-                  className="font-black text-[#7b2d8b] leading-tight"
+                  className="font-black text-[#7b2d8b] leading-tight font-family-more-sugar"
                   style={{
-                    fontFamily: "'More Sugar', 'Bangers', cursive",
                     fontSize: "clamp(18px, 2.4vw, 28px)",
                     letterSpacing: "0.01em",
                   }}
@@ -100,9 +96,8 @@ export function PartnerCTASection() {
                   Let's Build Something Healthy Together!
                 </h2>
                 <p
-                  className="mt-1 text-[#7b2d8b]"
+                  className="mt-1 text-[#7b2d8b] font-family-cosmic-sans"
                   style={{
-                    fontFamily: "'Cosmic Sans', 'Comic Sans MS', cursive",
                     fontSize: "clamp(12px, 1.1vw, 14px)",
                   }}
                 >
@@ -111,10 +106,9 @@ export function PartnerCTASection() {
               </div>
 
               <motion.button
-                className="flex-shrink-0 px-7 py-3 rounded-xl font-bold text-white uppercase tracking-widest"
+                className="flex-shrink-0 px-7 py-3 rounded-xl font-bold text-white uppercase tracking-widest font-family-more-sugar"
                 style={{
                   backgroundColor: "#7b2d8b",
-                  fontFamily: "'More Sugar', 'Bangers', cursive",
                   fontSize: "clamp(12px, 1.1vw, 14px)",
                   letterSpacing: "0.08em",
                   whiteSpace: "nowrap",

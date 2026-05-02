@@ -5,7 +5,8 @@ import Link from "next/link"
 
 function BadgePill({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-[#046b46] text-[#046b46] font-bold uppercase text-[11px] sm:text-[12px] tracking-widest bg-white/60">
+    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full 
+          border border-[#046b46] text-[#046b46] font-bold uppercase text-[11px] sm:text-[12px] tracking-widest bg-white/60 font-family-cosmic-sans">
       <span className="w-1.5 h-1.5 rounded-full bg-[#046b46] inline-block" />
       {children}
     </span>
@@ -44,7 +45,7 @@ export function SevenSutaHero() {
             <img
               src="/images/newui_comics/makhnapng.png"
               alt="7 Suta Makhana"
-              className=" h-[260px] sm:h-[380px] lg:h-[420px] object-cover"
+              className="h-[260px] sm:h-[380px] lg:h-[420px] object-cover"
             />
           </motion.div>
 
@@ -69,18 +70,17 @@ export function SevenSutaHero() {
               transition={{ duration: 0.65, delay: 0.1 }}
             >
               <span
-                className="font-bold uppercase text-[13px] sm:text-[15px] tracking-[0.22em] text-[#7B2D8B]"
-                style={{ fontFamily: "'More Sugar', cursive" }}
+                className="font-bold uppercase text-[13px] sm:text-[15px] tracking-[0.22em] text-[#7B2D8B] font-family-more-sugar"
               >
                 The Makhana Man
               </span>
-              <span className="px-2.5 py-0.5 rounded-md bg-[#7B2D8B] text-white text-[11px] sm:text-[12px] font-bold tracking-widest uppercase">
+              <span className="px-2.5 py-0.5 rounded-md bg-[#7B2D8B] text-white text-[11px] sm:text-[12px] font-bold tracking-widest uppercase font-family-cosmic-sans">
                 7S
               </span>
             </motion.div>
 
             <motion.h1
-              className="hero-title font-bold uppercase leading-[0.9] text-[#046b46] mb-4"
+              className="hero-title font-bold uppercase leading-[0.9] text-[#046b46] mb-4 font-family-cosmic-sans"
               style={{ fontSize: "clamp(42px, 7vw, 88px)" }}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -103,22 +103,21 @@ export function SevenSutaHero() {
             >
               <div className="flex items-center gap-2 px-4 py-2 rounded-2xl border-2 border-[#046b46] bg-white/70">
                 <span
-                  className="font-bold text-[#046b46] text-[22px] sm:text-[28px] leading-none"
-                  style={{ fontFamily: "'More Sugar', cursive" }}
+                  className="font-bold text-[#046b46] text-[22px] sm:text-[28px] leading-none font-family-more-sugar"
                 >
                   22.2 mm
                 </span>
-                <span className="text-[#1A1A2E] font-bold uppercase text-[10px] sm:text-[11px] tracking-widest leading-tight">
+                <span className="text-[#1A1A2E] font-bold uppercase text-[10px] sm:text-[11px] tracking-widest leading-tight font-family-cosmic-sans">
                   7 Suta<br />Grade
                 </span>
               </div>
-              <span className="text-[#7B2D8B] font-bold uppercase text-[11px] tracking-widest leading-snug">
+              <span className="text-[#7B2D8B] font-bold uppercase text-[11px] tracking-widest leading-snug font-family-cosmic-sans">
                 Hand·picked<br />Every Kernel
               </span>
             </motion.div>
 
             <motion.p
-              className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] mb-8 max-w-[480px] text-[13px] sm:text-[15px] md:text-[17px]"
+              className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] mb-8 max-w-[480px] text-[13px] sm:text-[15px] md:text-[17px] font-family-cosmic-sans"
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.35 }}
@@ -141,19 +140,13 @@ export function SevenSutaHero() {
                 href=""
                 className="group relative inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#046b46] text-white font-bold uppercase tracking-widest text-[13px] sm:text-[14px] overflow-hidden transition-all duration-300 hover:shadow-[0_6px_28px_rgba(4,107,70,0.35)] hover:-translate-y-0.5"
               >
-                <span className="relative z-10">Know More About 7 Suta</span>
-                {/* <svg
-                  className="relative z-10 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-                  fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg> */}
+                <span className="relative z-10 font-family-cosmic-sans">Know More About 7 Suta</span>
                 <span className="absolute inset-0 bg-white/10 translate-x-[-110%] group-hover:translate-x-[110%] transition-transform duration-500 skew-x-[-20deg]" />
               </Link>
 
               <Link
                 href="#what-is-7-suta"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-[#1A1A2E] text-[#1A1A2E] font-bold uppercase tracking-widest text-[12px] sm:text-[13px] hover:bg-[#1A1A2E] hover:text-white transition-all duration-300"
+                className="font-family-cosmic-sans inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-[#1A1A2E] text-[#1A1A2E] font-bold uppercase tracking-widest text-[12px] sm:text-[13px] hover:bg-[#1A1A2E] hover:text-white transition-all duration-300"
               >
                 What is 7 Suta?
               </Link>
@@ -174,12 +167,11 @@ export function SevenSutaHero() {
                   <StarDot />
                   <span>
                     <strong
-                      className="font-bold text-[#046b46] text-[15px] sm:text-[17px]"
-                      style={{ fontFamily: "'More Sugar', cursive" }}
+                      className="font-bold font-family-more-sugar text-[#046b46] text-[15px] sm:text-[17px]"
                     >
                       {s.val}
                     </strong>{" "}
-                    <span className="text-[#4b3f3f] font-bold uppercase text-[10px] sm:text-[11px] tracking-widest">
+                    <span className="text-[#4b3f3f] font-bold uppercase text-[10px] sm:text-[11px] tracking-widest font-family-cosmic-sans">
                       {s.label}
                     </span>
                   </span>

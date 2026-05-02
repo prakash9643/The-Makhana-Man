@@ -83,9 +83,8 @@ export function WhyPrivateLabelSection() {
           {/* Heading */}
           <div className="px-6 md:px-10 pt-8 pb-6" style={{ borderBottom: "1.5px solid #e0d5cc" }}>
             <h2
-              className="text-center font-bold text-[#7B2D8B]"
+              className="text-center font-bold text-[#7B2D8B] font-family-more-sugar"
               style={{
-                fontFamily: "'More Sugar', 'Bangers', cursive",
                 fontSize: "clamp(18px, 2.4vw, 30px)",
                 letterSpacing: "0.01em",
               }}
@@ -121,9 +120,8 @@ export function WhyPrivateLabelSection() {
 
                 {/* Title */}
                 <p
-                  className="font-bold leading-snug"
+                  className="font-bold leading-snug font-family-more-sugar"
                   style={{
-                    fontFamily: "'More Sugar', 'Bangers', cursive",
                     fontSize: "clamp(13px, 1.15vw, 15px)",
                     letterSpacing: "0.01em",
                     color: "#7B2D8B"
@@ -134,9 +132,8 @@ export function WhyPrivateLabelSection() {
 
                 {/* Desc */}
                 <p
-                  className="text-[#4b3f3f] leading-relaxed"
+                  className="text-[#4b3f3f] leading-relaxed font-family-cosmic-sans"
                   style={{
-                    fontFamily: "'Cosmic Sans', 'Comic Sans MS', cursive",
                     fontSize: "clamp(11px, 0.9vw, 13px)",
                   }}
                 >
@@ -150,6 +147,13 @@ export function WhyPrivateLabelSection() {
       </div>
 
       <style>{`
+        .font-family-more-sugar {
+          font-family: 'More Sugar', 'Bangers', cursive;
+        }
+        .font-family-cosmic-sans {
+          font-family: 'Cosmic Sans', 'Comic Sans MS', cursive;
+        }
+
         /* Mobile: single column, divider between each */
         .wpl-grid {
           display: grid;

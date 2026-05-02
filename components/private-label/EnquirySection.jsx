@@ -11,16 +11,14 @@ export function EnquirySection() {
 
   const handle = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
-  const labelCls = "block font-bold mb-1 text-[#1A1A2E]"
-  const inputCls = "w-full rounded-lg px-4 py-2.5 outline-none transition-all duration-200 bg-white text-[#1A1A2E] placeholder:text-[#b0a898]"
+  const labelCls = "block font-bold mb-1 text-[#1A1A2E] font-family-more-sugar"
+  const inputCls = "w-full rounded-lg px-4 py-2.5 outline-none transition-all duration-200 bg-white text-[#1A1A2E] placeholder:text-[#b0a898] font-family-cosmic-sans"
   const inputStyle = {
     border: "1.5px solid #d0c8c0",
-    fontFamily: "'Cosmic Sans', 'Comic Sans MS', cursive",
     fontSize: "clamp(12px, 1vw, 14px)",
   }
   const focusStyle = { borderColor: "#7b2d8b" }
   const labelStyle = {
-    fontFamily: "'More Sugar', 'Bangers', cursive",
     fontSize: "clamp(12px, 1vw, 14px)",
     color: "#7b2d8b",
   }
@@ -48,8 +46,7 @@ export function EnquirySection() {
                 className="w-[225px] h-[300px] object-cover"
               />
               <span
-                className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-[#7b2d8b] text-white text-[9px] font-bold tracking-widest uppercase px-3 py-1 rounded-full whitespace-nowrap"
-                style={{ fontFamily: "'More Sugar', 'Bangers', cursive" }}
+                className="font-family-more-sugar absolute -bottom-3 left-1/2 -translate-x-1/2 bg-[#7b2d8b] text-white text-[9px] font-bold tracking-widest uppercase px-3 py-1 rounded-full whitespace-nowrap"
               >
                 Classic Makhana
               </span>
@@ -66,9 +63,8 @@ export function EnquirySection() {
             transition={{ duration: 0.6 }}
           >
             <h2
-              className="text-center font-bold mb-8 text-[#7b2d8b]"
+              className="text-center font-bold mb-8 text-[#7b2d8b] font-family-more-sugar"
               style={{
-                fontFamily: "'More Sugar', 'Bangers', cursive",
                 fontSize: "clamp(18px, 2.2vw, 26px)",
               }}
             >
@@ -124,7 +120,7 @@ export function EnquirySection() {
                   <div className="relative">
                     <select
                       name="productInterest" value={form.productInterest} onChange={handle}
-                      className={inputCls + " appearance-none pr-10"}
+                      className={inputCls + " appearance-none pr-10 font-family-cosmic-sans"}
                       style={{ ...inputStyle, color: form.productInterest ? "#1A1A2E" : "#b0a898" }}
                     >
                       <option value="" disabled>Select Product</option>
@@ -147,7 +143,7 @@ export function EnquirySection() {
                 <div className="relative">
                   <select
                     name="packagingType" value={form.packagingType} onChange={handle}
-                    className={inputCls + " appearance-none pr-10"}
+                    className={inputCls + " appearance-none pr-10 font-family-cosmic-sans"}
                     style={{ ...inputStyle, color: form.packagingType ? "#1A1A2E" : "#b0a898" }}
                   >
                     <option value="" disabled>Select Packaging Type</option>
@@ -180,7 +176,7 @@ export function EnquirySection() {
                   <div className="relative">
                     <select
                       name="targetMarket" value={form.targetMarket} onChange={handle}
-                      className={inputCls + " appearance-none pr-10"}
+                      className={inputCls + " appearance-none pr-10 font-family-cosmic-sans"}
                       style={{ ...inputStyle, color: form.targetMarket ? "#1A1A2E" : "#b0a898" }}
                     >
                       <option value="" disabled>Select Market</option>
@@ -214,10 +210,9 @@ export function EnquirySection() {
               {/* Submit */}
               <motion.button
                 type="button"
-                className="w-full py-3.5 rounded-xl font-bold text-white tracking-widest uppercase"
+                className="w-full py-3.5 rounded-xl font-bold text-white tracking-widest uppercase font-family-more-sugar"
                 style={{
                   backgroundColor: "#7b2d8b",
-                  fontFamily: "'More Sugar', 'Bangers', cursive",
                   fontSize: "clamp(13px, 1.1vw, 15px)",
                   letterSpacing: "0.08em",
                 }}
@@ -246,8 +241,7 @@ export function EnquirySection() {
                 className="w-[225px] h-[300px] object-cover"
               />
               <span
-                className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-[#7b2d8b] text-white text-[9px] font-bold tracking-widest uppercase px-3 py-1 rounded-full whitespace-nowrap"
-                style={{ fontFamily: "'More Sugar', 'Bangers', cursive" }}
+                className="font-family-more-sugar absolute -bottom-3 left-1/2 -translate-x-1/2 bg-[#7b2d8b] text-white text-[9px] font-bold tracking-widest uppercase px-3 py-1 rounded-full whitespace-nowrap"
               >
                 Premium Makhana
               </span>
