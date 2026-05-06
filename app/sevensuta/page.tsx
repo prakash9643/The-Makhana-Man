@@ -20,7 +20,7 @@ export default function sevensuta() {
       <ManifestoSection />
       <GradeAboveGradeSection />
       <WhereItComesFromSection />
-      <VerifiedVoicesSection />
+      {/* <VerifiedVoicesSection /> */}
       <ChoiceIsClearSection />
     </div>
   )

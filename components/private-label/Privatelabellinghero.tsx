@@ -50,7 +50,12 @@ const features = [
   },
 ]
 
-export function PrivateLabellingHero() {
+// ✅ TypeScript prop type defined
+type PrivateLabellingHeroProps = {
+  onEnquireNow?: () => void
+}
+
+export function PrivateLabellingHero({ onEnquireNow }: PrivateLabellingHeroProps) {
   return (
     <section
       className="relative overflow-hidden pt-12 pb-12 md:pt-16 md:pb-16"
@@ -77,37 +82,33 @@ export function PrivateLabellingHero() {
           >
             <h1
               className="font-black uppercase leading-none mb-2 text-[#7B2D8B] font-family-more-sugar"
-              style={{
-                fontSize: "clamp(28px, 5vw, 52px)",
-                letterSpacing: "0.01em",
-              }}
+              style={{ fontSize: "clamp(28px, 5vw, 52px)", letterSpacing: "0.01em" }}
             >
               Private<br />Labelling
             </h1>
             <p
               className="font-bold uppercase mb-4 text-[#1A1A2E] font-family-more-sugar"
-              style={{
-                fontSize: "clamp(11px, 1.4vw, 15px)",
-                letterSpacing: "0.06em",
-              }}
+              style={{ fontSize: "clamp(11px, 1.4vw, 15px)", letterSpacing: "0.06em" }}
             >
               Your Brand, Our Quality Makhana
             </p>
             <p
               className="mb-6 text-[#4b3f3f] leading-relaxed font-family-cosmic-sans"
-              style={{
-                fontSize: "clamp(12px, 1.1vw, 14px)",
-              }}
+              style={{ fontSize: "clamp(12px, 1.1vw, 14px)" }}
             >
               Create your own brand of healthy snacks with The Makhana Man. We handle the quality, you build the brand.
             </p>
 
+            {/* ✅ onClick wired to prop, cursor pointer */}
             <motion.button
+              type="button"
+              onClick={onEnquireNow}
               className="inline-flex items-center gap-2 px-6 py-3 font-bold uppercase tracking-widest text-white rounded-lg font-family-more-sugar"
               style={{
                 backgroundColor: "#7B2D8B",
                 fontSize: "clamp(12px, 1.1vw, 14px)",
                 letterSpacing: "0.08em",
+                cursor: "pointer",
               }}
               whileHover={{ scale: 1.04, backgroundColor: "#6a2478" }}
               whileTap={{ scale: 0.97 }}
@@ -151,29 +152,22 @@ export function PrivateLabellingHero() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.45, delay: 0.25 + i * 0.1 }}
               >
-                {/* Icon circle */}
                 <div
                   className="flex-shrink-0 w-11 h-11 rounded-full flex items-center justify-center"
                   style={{ backgroundColor: "#ede0f7", border: "1.5px solid #d8b8f0" }}
                 >
                   {f.icon}
                 </div>
-
                 <div>
                   <p
                     className="font-bold text-[#1A1A2E] leading-snug font-family-more-sugar"
-                    style={{
-                      fontSize: "clamp(12px, 1.15vw, 15px)",
-                      letterSpacing: "0.02em",
-                    }}
+                    style={{ fontSize: "clamp(12px, 1.15vw, 15px)", letterSpacing: "0.02em" }}
                   >
                     {f.title}
                   </p>
                   <p
                     className="text-[#4b3f3f] font-family-cosmic-sans"
-                    style={{
-                      fontSize: "clamp(11px, 0.9vw, 13px)",
-                    }}
+                    style={{ fontSize: "clamp(11px, 0.9vw, 13px)" }}
                   >
                     {f.desc}
                   </p>

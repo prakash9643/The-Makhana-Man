@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import Link from "next/link"
 
-const PILLS = ["Handpicked.", "22.2mm.", "7 Suta."]
+const PILLS = ["Handpicked.", "22.2mm+.", "7 Suta+."]
 
 export function ChoiceIsClearSection() {
   return (
@@ -79,6 +79,7 @@ export function ChoiceIsClearSection() {
         <span
           className="font-bold uppercase whitespace-nowrap font-family-more-sugar"
           style={{
+            fontFamily: "'More Sugar', cursive",
             fontSize: "clamp(70px, 16vw, 200px)",
             opacity: 0.04,
             color: "#ffffff",
@@ -104,6 +105,7 @@ export function ChoiceIsClearSection() {
           <span
             className="font-bold uppercase tracking-widest font-family-more-sugar"
             style={{
+              fontFamily: "'More Sugar', cursive",
               fontSize: "clamp(10px, 1.6vw, 12px)",
               color: "#f5c842",
             }}
@@ -115,16 +117,17 @@ export function ChoiceIsClearSection() {
 
         {/* Heading */}
         <motion.h2
-          className="font-bold uppercase leading-[1.0] text-white mb-5 font-family-more-sugar"
+          className="font-bold uppercase leading-[1.0] text-white mb-5 font-family-more-sugar "
           style={{
-            fontSize: "clamp(36px, 7vw, 88px)",
+            fontFamily: "'More Sugar', cursive",
+            fontSize: "clamp(26px, 6vw, 68px)",
           }}
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.05 }}
         >
-          The Choice<br />is Clear
+          The Choice is Clear <br /> 7 Suta+ Handpicked,<br /> Nothing Less
         </motion.h2>
 
         {/* Pills row */}
@@ -138,8 +141,9 @@ export function ChoiceIsClearSection() {
           {PILLS.map((pill, i) => (
             <span
               key={i}
-              className="font-bold uppercase tracking-widest px-4 py-1.5 rounded-full font-family-more-sugar"
+              className="font-bold uppercase tracking-widest px-4 py-1.5 rounded-full font-family-more-sugar "
               style={{
+                fontFamily: "'More Sugar', cursive",
                 fontSize: "clamp(11px, 1.8vw, 14px)",
                 backgroundColor: "rgba(255,255,255,0.12)",
                 color: "#ffffff",
@@ -153,9 +157,10 @@ export function ChoiceIsClearSection() {
         </motion.div>
 
         {/* Body copy */}
-        <motion.p
+        {/* <motion.p
           className="font-bold uppercase leading-relaxed tracking-wide text-white/75 max-w-2xl mb-10 font-family-more-sugar"
           style={{
+            fontFamily: "'More Sugar', cursive",
             fontSize: "clamp(11px, 1.8vw, 15px)",
           }}
           initial={{ opacity: 0, y: 12 }}
@@ -168,7 +173,7 @@ export function ChoiceIsClearSection() {
           <span className="text-white">
             there's simply no going back to ordinary makhana.
           </span>
-        </motion.p>
+        </motion.p> */}
 
         {/* CTA Buttons */}
         <motion.div
@@ -180,15 +185,16 @@ export function ChoiceIsClearSection() {
         >
           {/* Primary CTA */}
           <Link
-            href="/products"
-            className="font-family-more-sugar group relative inline-flex items-center gap-2 font-bold uppercase tracking-widest px-8 py-4 rounded-full overflow-hidden transition-all duration-300"
+          href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20order%207%20Suta%20Makhana"
+            className="font-family-more-sugar  group relative inline-flex items-center gap-2 font-bold uppercase tracking-widest px-8 py-4 rounded-full overflow-hidden transition-all duration-300"
             style={{
+              fontFamily: "'More Sugar', cursive",
               fontSize: "clamp(11px, 1.8vw, 14px)",
               backgroundColor: "#f5c842",
               color: "#0a3d26",
             }}
           >
-            <span className="relative z-10">Know More About 7 Suta</span>
+            <span className="relative z-10">connecting to WhatsApp</span>
             {/* hover overlay */}
             <span
               className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -197,25 +203,26 @@ export function ChoiceIsClearSection() {
           </Link>
 
           {/* WhatsApp CTA */}
-          <a
+          {/* <a
             href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20order%207%20Suta%20Makhana"
             target="_blank"
             rel="noopener noreferrer"
             className="font-family-more-sugar group inline-flex items-center gap-2 font-bold uppercase tracking-widest px-8 py-4 rounded-full transition-all duration-300"
             style={{
+              fontFamily: "'More Sugar', cursive",
               fontSize: "clamp(11px, 1.8vw, 14px)",
               backgroundColor: "transparent",
               color: "#ffffff",
               border: "1.5px solid rgba(255,255,255,0.45)",
             }}
           >
-            {/* WhatsApp icon */}
+            WhatsApp icon 
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="flex-shrink-0">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
             </svg>
-            WhatsApp Order
-          </a>
-        </motion.div>
+           connecting to WhatsApp
+          </a>*/}
+        </motion.div> 
 
         {/* Shipping note */}
         <motion.div
@@ -233,8 +240,9 @@ export function ChoiceIsClearSection() {
             <circle cx="18.5" cy="18.5" r="2.5"/>
           </svg>
           <p
-            className="font-bold uppercase tracking-widest font-family-more-sugar"
+            className="font-bold uppercase tracking-widest font-family-more-sugar "
             style={{
+              fontFamily: "'More Sugar', cursive",
               fontSize: "clamp(9px, 1.4vw, 11px)",
               color: "rgba(255,255,255,0.5)",
             }}

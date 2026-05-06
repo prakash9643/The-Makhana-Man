@@ -16,6 +16,7 @@ export function ManifestoSection() {
         <span
           className="font-bold uppercase whitespace-nowrap text-[#1A1A2E] font-family-more-sugar"
           style={{
+            fontFamily: "'More Sugar', cursive",
             fontSize: "clamp(80px, 18vw, 220px)",
             opacity: 0.04,
             letterSpacing: "0.04em",
@@ -25,7 +26,7 @@ export function ManifestoSection() {
         </span>
       </div>
 
-      <div className="relative max-w-screen-2xl mx-auto px-4 md:px-8">
+      <div className="relative max-w-screen-2xl  mx-auto px-4 md:px-8">
 
         {/* Label */}
         <motion.div
@@ -37,7 +38,8 @@ export function ManifestoSection() {
         >
           <div className="w-1 h-6 bg-[#046b46] rounded-full flex-shrink-0" />
           <span
-            className="font-bold uppercase tracking-widest text-[#046b46] text-[12px] sm:text-[13px] font-family-more-sugar"
+            className="font-bold uppercase tracking-widest text-[#046b46] text-[12px] sm:text-[13px] font-family-more-sugar "
+            style={{ fontFamily: "'More Sugar', cursive" }}
           >
             Our Manifesto
           </span>
@@ -55,8 +57,9 @@ export function ManifestoSection() {
             transition={{ duration: 0.7, delay: 0.1 }}
           >
             <h2
-              className="font-bold uppercase leading-[1.0] text-[#1A1A2E] font-family-more-sugar"
+              className="font-bold uppercase leading-[1.0] text-[#1A1A2E] font-family-more-sugar "
               style={{
+                fontFamily: "'More Sugar', cursive",
                 fontSize: "clamp(36px, 5.5vw, 52px)",
               }}
             >
@@ -69,7 +72,8 @@ export function ManifestoSection() {
             </h2>
 
             <motion.p
-              className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] mt-6 text-[12px] sm:text-[13px] md:text-[14px] max-w-[320px] font-family-more-sugar"
+              className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] mt-6 text-[12px] sm:text-[13px] md:text-[14px] max-w-[320px] font-family-more-sugar "
+              style={{ fontFamily: "'More Sugar', cursive" }}
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -94,7 +98,8 @@ export function ManifestoSection() {
             ].map((para, i) => (
               <motion.p
                 key={i}
-                className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] text-[12px] sm:text-[13px] md:text-[14px] font-family-more-sugar"
+                className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] text-[12px] sm:text-[13px] md:text-[14px] font-family-more-sugar "
+                style={{ fontFamily: "'More Sugar', cursive" }}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -113,7 +118,8 @@ export function ManifestoSection() {
               transition={{ duration: 0.65, delay: 0.5 }}
             >
               <p
-                className="font-bold uppercase text-[#7B2D8B] leading-snug tracking-wide text-[13px] sm:text-[15px] md:text-[16px] font-family-more-sugar"
+                className="font-bold uppercase text-[#7B2D8B] leading-snug tracking-wide text-[13px] sm:text-[15px] md:text-[16px] font-family-more-sugar "
+                style={{ fontFamily: "'More Sugar', cursive" }}
               >
                 "We reject nearly 20% of already 7 Suta grade makhana.
                 That's what makes it 7 Suta."
@@ -121,7 +127,8 @@ export function ManifestoSection() {
             </motion.blockquote>
 
             <motion.p
-              className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] text-[12px] sm:text-[13px] md:text-[14px] font-family-more-sugar"
+              className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] text-[12px] sm:text-[13px] md:text-[14px] font-family-more-sugar "
+              style={{ fontFamily: "'More Sugar', cursive" }}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

@@ -62,8 +62,9 @@ export function VerifiedVoicesSection() {
         aria-hidden="true"
       >
         <span
-          className="font-bold uppercase whitespace-nowrap font-family-more-sugar"
+          className="font-bold uppercase whitespace-nowrap"
           style={{
+            fontFamily: "'More Sugar', cursive",
             fontSize: "clamp(60px, 13vw, 170px)",
             opacity: 0.03,
             color: "#1A1A2E",
@@ -87,8 +88,8 @@ export function VerifiedVoicesSection() {
           >
             <div className="w-1 h-6 bg-[#046b46] rounded-full flex-shrink-0" />
             <span
-              className="font-bold uppercase tracking-widest text-[#046b46] font-family-more-sugar"
-              style={{ fontSize: "clamp(11px, 1.8vw, 13px)" }}
+              className="font-bold uppercase tracking-widest text-[#046b46]"
+              style={{ fontFamily: "'More Sugar', cursive", fontSize: "clamp(11px, 1.8vw, 13px)" }}
             >
               Verified Voices
             </span>
@@ -96,8 +97,9 @@ export function VerifiedVoicesSection() {
           </motion.div>
 
           <motion.h2
-            className="font-bold uppercase leading-[1.0] text-[#1A1A2E] font-family-more-sugar"
+            className="font-bold uppercase leading-[1.0] text-[#1A1A2E]"
             style={{
+              fontFamily: "'More Sugar', cursive",
               fontSize: "clamp(26px, 4.5vw, 48px)",
             }}
             initial={{ opacity: 0, y: -14 }}
@@ -118,8 +120,8 @@ export function VerifiedVoicesSection() {
           >
             <StarRow count={5} />
             <span
-              className="font-bold uppercase tracking-widest text-[#7a6f6a] font-family-more-sugar"
-              style={{ fontSize: "clamp(10px, 1.5vw, 12px)" }}
+              className="font-bold uppercase tracking-widest text-[#7a6f6a]"
+              style={{ fontFamily: "'More Sugar', cursive", fontSize: "clamp(10px, 1.5vw, 12px)" }}
             >
               5.0 · 100% Verified Buyers
             </span>
@@ -143,8 +145,9 @@ export function VerifiedVoicesSection() {
             >
               {/* Big decorative quote mark */}
               <span
-                className="absolute top-4 right-5 pointer-events-none select-none font-bold leading-none font-family-more-sugar"
+                className="absolute top-4 right-5 pointer-events-none select-none font-bold leading-none"
                 style={{
+                  fontFamily: "'More Sugar', cursive",
                   fontSize: "clamp(80px, 10vw, 110px)",
                   color: r.accent,
                   opacity: 0.08,
@@ -160,8 +163,9 @@ export function VerifiedVoicesSection() {
 
               {/* Quote */}
               <p
-                className="font-bold uppercase leading-relaxed tracking-wide flex-1 font-family-more-sugar"
+                className="font-bold uppercase leading-relaxed tracking-wide flex-1"
                 style={{
+                  fontFamily: "'More Sugar', cursive",
                   fontSize: "clamp(11px, 1.6vw, 13px)",
                   color: "#3a3330",
                 }}
@@ -176,9 +180,10 @@ export function VerifiedVoicesSection() {
               <div className="flex items-center gap-3">
                 {/* Avatar circle */}
                 <div
-                  className="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-bold font-family-more-sugar"
+                  className="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-bold"
                   style={{
                     backgroundColor: r.accent,
+                    fontFamily: "'More Sugar', cursive",
                     fontSize: "clamp(14px, 2vw, 18px)",
                     color: r.bg,
                   }}
@@ -187,8 +192,9 @@ export function VerifiedVoicesSection() {
                 </div>
                 <div>
                   <p
-                    className="font-bold uppercase leading-none font-family-more-sugar"
+                    className="font-bold uppercase leading-none"
                     style={{
+                      fontFamily: "'More Sugar', cursive",
                       fontSize: "clamp(12px, 1.8vw, 14px)",
                       color: r.accent,
                     }}
@@ -196,8 +202,9 @@ export function VerifiedVoicesSection() {
                     {r.name}
                   </p>
                   <p
-                    className="font-bold uppercase tracking-widest mt-0.5 font-family-more-sugar"
+                    className="font-bold uppercase tracking-widest mt-0.5"
                     style={{
+                      fontFamily: "'More Sugar', cursive",
                       fontSize: "clamp(9px, 1.3vw, 10px)",
                       color: "#7a6f6a",
                     }}
@@ -221,8 +228,9 @@ export function VerifiedVoicesSection() {
 
         {/* ── Bottom trust line ── */}
         <motion.p
-          className="text-center font-bold uppercase tracking-widest mt-10 md:mt-12 text-[#7a6f6a] font-family-more-sugar"
+          className="text-center font-bold uppercase tracking-widest mt-10 md:mt-12 text-[#7a6f6a]"
           style={{
+            fontFamily: "'More Sugar', cursive",
             fontSize: "clamp(9px, 1.4vw, 11px)",
           }}
           initial={{ opacity: 0 }}

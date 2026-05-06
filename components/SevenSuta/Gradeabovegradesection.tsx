@@ -147,6 +147,7 @@ function FeatureRow({
         <p
           className="font-bold font-family-more-sugar uppercase leading-snug tracking-wide"
           style={{
+            fontFamily: "'More Sugar', cursive",
             fontSize: "clamp(11px, 1.8vw, 13px)",
             color: titleColor,
           }}
@@ -156,6 +157,7 @@ function FeatureRow({
         <p
           className="font-bold uppercase font-family-more-sugar leading-relaxed tracking-wide mt-0.5"
           style={{
+            fontFamily: "'More Sugar', cursive",
             fontSize: "clamp(10px, 1.5vw, 11px)",
             color: descColor,
           }}
@@ -181,8 +183,9 @@ export function GradeAboveGradeSection() {
         aria-hidden="true"
       >
         <span
-          className="font-bold font-family-more-sugar uppercase whitespace-nowrap"
+          className="font-bold font-family-more-sugar uppercase whitespace-nowrap font-family-more-sugar "
           style={{
+            fontFamily: "'More Sugar', cursive",
             fontSize: "clamp(60px, 14vw, 180px)",
             opacity: 0.03,
             color: "#1A1A2E",
@@ -198,7 +201,7 @@ export function GradeAboveGradeSection() {
         {/* ── CENTERED HEADER ── */}
         <div className="flex flex-col items-center text-center mb-10 md:mb-14">
 
-          {/* Label */}
+          {/* Label — pill on both sides for centered look */}
           <motion.div
             className="flex items-center gap-2 mb-3"
             initial={{ opacity: 0, y: -12 }}
@@ -208,8 +211,8 @@ export function GradeAboveGradeSection() {
           >
             <div className="w-1 h-6 bg-[#c14b33] rounded-full flex-shrink-0" />
             <span
-              className="font-bold uppercase tracking-widest text-[#c14b33] font-family-more-sugar"
-              style={{ fontSize: "clamp(11px, 1.8vw, 13px)" }}
+              className="font-bold uppercase tracking-widest text-[#c14b33] font-family-more-sugar "
+              style={{ fontFamily: "'More Sugar', cursive", fontSize: "clamp(11px, 1.8vw, 13px)" }}
             >
               The Difference
             </span>
@@ -218,8 +221,9 @@ export function GradeAboveGradeSection() {
 
           {/* Heading */}
           <motion.h2
-            className="font-bold uppercase leading-[1.0] text-[#1A1A2E] mb-2 font-family-more-sugar"
+            className="font-bold uppercase leading-[1.0] text-[#1A1A2E] mb-2 font-family-more-sugar "
             style={{
+              fontFamily: "'More Sugar', cursive",
               fontSize: "clamp(28px, 4.5vw, 44px)",
             }}
             initial={{ opacity: 0, y: -16 }}
@@ -232,22 +236,22 @@ export function GradeAboveGradeSection() {
 
           <motion.p
             className="font-bold uppercase tracking-widest text-[#7a6f6a] font-family-more-sugar"
-            style={{ fontSize: "clamp(10px, 1.6vw, 12px)" }}
+            style={{ fontFamily: "'More Sugar', cursive", fontSize: "clamp(10px, 1.6vw, 12px)" }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
           >
-            7 Suta — Explained
+            7 Suta+ — Explained
           </motion.p>
         </div>
 
-        {/* ── TWO-COLUMN CARDS ── */}
+        {/* ── TWO-COLUMN CARDS — equal height via items-stretch ── */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-6 items-stretch">
 
-          {/* LEFT — Standard 6 Suta */}
+          {/* LEFT — Standard 7 Suta */}
           <motion.div
-            className="relative rounded-3xl p-6 md:p-8 flex flex-col gap-5"
+            className="relative rounded-3xl p-6 md:p-8 flex flex-col gap-5 "
             style={{
               backgroundColor: "#f3edf8",
               border: "1.5px solid #7b2d8b",
@@ -257,7 +261,7 @@ export function GradeAboveGradeSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            {/* PNG watermark */}
+            {/* PNG watermark — top-right, properly visible */}
             <div
               className="absolute top-[-30px] right-4 pointer-events-none select-none"
               aria-hidden="true"
@@ -286,18 +290,20 @@ export function GradeAboveGradeSection() {
               </div>
               <div>
                 <span
-                  className="inline-block font-bold uppercase tracking-widest px-3 py-1 rounded-full font-family-more-sugar"
+                  className="inline-block font-bold uppercase tracking-widest px-3 py-1 rounded-full font-family-more-sugar "
                   style={{
+                    fontFamily: "'More Sugar', cursive",
                     fontSize: "clamp(10px, 1.6vw, 12px)",
                     backgroundColor: "#7b2d8b",
                     color: "#f3edf8",
                   }}
                 >
-                  Standard
+                  PREMIUM
                 </span>
                 <p
                   className="font-bold uppercase leading-none mt-1 font-family-more-sugar"
                   style={{
+                    fontFamily: "'More Sugar', cursive",
                     fontSize: "clamp(18px, 3vw, 26px)",
                     color: "#7b2d8b",
                   }}
@@ -307,7 +313,7 @@ export function GradeAboveGradeSection() {
               </div>
             </div>
 
-            {/* Features */}
+            {/* Features — flex-1 so both cards grow equally */}
             <div className="flex flex-col gap-4 flex-1">
               {standardFeatures.map((f, i) => (
                 <FeatureRow key={i} {...f} delay={0.2 + i * 0.1} accent={false} purple />
@@ -315,7 +321,7 @@ export function GradeAboveGradeSection() {
             </div>
           </motion.div>
 
-          {/* RIGHT — 7 Suta Premium */}
+          {/* RIGHT — 7 Suta Plus */}
           <motion.div
             className="relative rounded-3xl p-6 md:p-8 flex flex-col gap-5"
             style={{
@@ -327,7 +333,7 @@ export function GradeAboveGradeSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            {/* PNG watermark */}
+            {/* PNG watermark — top-right, properly visible */}
             <div
               className="absolute top-[-30px] right-4 pointer-events-none select-none"
               aria-hidden="true"
@@ -343,6 +349,7 @@ export function GradeAboveGradeSection() {
 
             {/* Card header */}
             <div className="flex items-center gap-3 mb-1">
+              {/* PNG avatar circle — green tinted */}
               <div
                 className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#046b46]"
               >
@@ -355,18 +362,20 @@ export function GradeAboveGradeSection() {
               </div>
               <div>
                 <span
-                  className="inline-block font-bold uppercase tracking-widest px-3 py-1 rounded-full font-family-more-sugar"
+                  className="inline-block font-bold uppercase tracking-widest px-3 py-1 rounded-full font-family-more-sugar "
                   style={{
+                    fontFamily: "'More Sugar', cursive",
                     fontSize: "clamp(10px, 1.6vw, 12px)",
                     backgroundColor: "#046b46",
                     color: "#e8f4ee",
                   }}
                 >
-                  PREMIUM ✦
+                   ULTRA PREMIUM ✦
                 </span>
                 <p
-                  className="font-bold uppercase leading-none mt-1 font-family-more-sugar"
+                  className="font-bold uppercase leading-none mt-1 font-family-more-sugar "
                   style={{
+                    fontFamily: "'More Sugar', cursive",
                     fontSize: "clamp(18px, 3vw, 26px)",
                     color: "#046b46",
                   }}
@@ -376,7 +385,7 @@ export function GradeAboveGradeSection() {
               </div>
             </div>
 
-            {/* Features */}
+            {/* Features — flex-1 so both cards grow equally */}
             <div className="flex flex-col gap-4 flex-1">
               {plusFeatures.map((f, i) => (
                 <FeatureRow key={i} {...f} delay={0.3 + i * 0.1} accent={true} />
@@ -386,21 +395,7 @@ export function GradeAboveGradeSection() {
 
         </div>
 
-        {/* Bottom tagline */}
-        <motion.p
-          className="text-center font-bold uppercase tracking-widest mt-10 md:mt-12 font-family-more-sugar"
-          style={{
-            fontSize: "clamp(10px, 1.6vw, 12px)",
-            color: "#7a6f6a",
-          }}
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          We reject nearly 20% of already 7 Suta grade makhana.{" "}
-          <span style={{ color: "#046b46" }}>That's the 7 Suta standard.</span>
-        </motion.p>
+    
 
       </div>
     </section>
