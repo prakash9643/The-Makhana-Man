@@ -92,13 +92,25 @@ export function ManifestoSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
+            {/* The 1% Standard heading */}
+            <motion.h3
+              className="font-bold uppercase text-[#c14b33] text-[18px] sm:text-[20px] md:text-[22px]"
+              style={{ fontFamily: "'More Sugar', cursive" }}
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              The 1% Standard
+            </motion.h3>
+
             {[
-              "The Makhana industry runs on sieves. Kernels are shaken through meshes, sorted by size, and packed by the sackful. 7 Suta — 22.2 mm — is already the premium grade. Most brands stop there.",
-              "We don't. After sieve-grading to 7 Suta, every single kernel passes through the hands of our trained sorters in Darbhanga. They look for perfect spherical form, zero cracks, zero discolouration, zero flat spots. A damaged kernel pops differently, absorbs spice unevenly, and breaks in your mouth rather than crunching.",
+              "Nature rarely produces perfection. While the vast majority of the harvest is small and irregular, a tiny fraction reaches the majestic 7+ Suta (22.2mm) threshold. Most brands stop there, but we believe size is nothing without soul.",
+              'We subject our largest kernels to a rigorous "hand-and-eye" audit in Katihar, discarding anything with a surface flaw or a structural weak point.',
             ].map((para, i) => (
               <motion.p
                 key={i}
-                className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] text-[12px] sm:text-[13px] md:text-[14px] font-family-more-sugar "
+                className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] text-[12px] sm:text-[13px] md:text-[14px]"
                 style={{ fontFamily: "'More Sugar', cursive" }}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -118,26 +130,24 @@ export function ManifestoSection() {
               transition={{ duration: 0.65, delay: 0.5 }}
             >
               <p
-                className="font-bold uppercase text-[#7B2D8B] leading-snug tracking-wide text-[13px] sm:text-[15px] md:text-[16px] font-family-more-sugar "
+                className="font-bold uppercase text-[#7B2D8B] leading-snug tracking-wide text-[13px] sm:text-[15px] md:text-[16px]"
                 style={{ fontFamily: "'More Sugar', cursive" }}
               >
-                "We reject nearly 20% of already 7 Suta grade makhana.
-                That's what makes it 7 Suta."
+                "We don't just sell makhana; we curate the top 1% of the harvest."
               </p>
             </motion.blockquote>
 
             <motion.p
-              className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] text-[12px] sm:text-[13px] md:text-[14px] font-family-more-sugar "
+              className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] text-[12px] sm:text-[13px] md:text-[14px]"
               style={{ fontFamily: "'More Sugar', cursive" }}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.62 }}
             >
-              What remains is{" "}
-              <span className="text-[#046b46]">7 Suta</span> — the kernel
-              within the kernel. Rarer, rounder, more beautiful, and infinitely
-              more satisfying to eat.
+              A crunch that is{" "}
+              <span className="text-[#046b46]">architectural in its precision</span>{" "}
+              and legendary in its scale.
             </motion.p>
           </motion.div>
 

@@ -77,9 +77,10 @@ export function WhyMakhanaMan() {
             <span className="font-semibold font-family-more-sugar text-[#5da30c] text-[13px] sm:text-[15px] md:text-[17px]">
               KNOW THE DIFFERENCE, KNOW THE MAKHANA
             </span>
-            <span className="text-white font-semibold font-family-more-sugar text-[13px] sm:text-[14px] md:text-[16px] px-4 py-1 rounded-full bg-[#c14b33]">
-              .KNOW FROM US
-            </span>
+              <a href="/sevensuta"
+              className="text-white font-semibold font-more-sugar text-[13px] sm:text-[14px] md:text-[16px] px-4 py-1 rounded-full bg-[#c14b33] cursor-pointer">
+              KNOW FROM US
+            </a>
           </div>
         </motion.div>
 
