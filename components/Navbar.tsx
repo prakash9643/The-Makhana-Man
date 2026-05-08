@@ -7,14 +7,14 @@ import Link from "next/link"
 const navLinks = [
   { label: "HOME",    href: "/"         },
   { label: "ABOUT",   href: "/about"    },
-  { label: "CONTACT", href: "#"         },
+  { label: "CONTACT", href: "/contact"         },
     { label: "SPECIALZATION", href: "/sevensuta"         },
 ]
 
 const navMobileLinks = [
   { label: "HOME",    href: "/"         },
   { label: "ABOUT",   href: "/about"    },
-    { label: "CONTACT", href: "#"         },
+    { label: "CONTACT", href: "/contact"         },
      { label: "SPECIALZATION", href: "/sevensuta"         },
     { label: "PRODUCTS",   href: "/products"    },
 ]
