@@ -1,5 +1,3 @@
-
-
 "use client"
 
 import { motion } from "framer-motion"
@@ -41,7 +39,6 @@ function FAQItem({ q, a, delay }: { q: string; a: string; delay: number }) {
         >
           Q
         </span>
-        {/* FAQ question — matched to PillarsSection card h3 */}
         <p
           className="font-bold uppercase font-family-more-sugar text-[#1A1A2E]"
           style={{
@@ -60,7 +57,6 @@ function FAQItem({ q, a, delay }: { q: string; a: string; delay: number }) {
         >
           A
         </span>
-        {/* FAQ answer — matched to PillarsSection card <p> */}
         <p
           className="font-bold uppercase font-family-cosmic-sans text-[#4b3f3f]"
           style={{ fontSize: "13px", lineHeight: "1.6", letterSpacing: "0.05em" }}
@@ -95,9 +91,9 @@ export function ContactCTASection() {
 
         <div className="relative max-w-screen-xl mx-auto px-4 md:px-10">
 
-          {/* sub-label — matched to PillarsSection badge */}
+          {/* sub-label */}
           <motion.div
-            className="flex items-center gap-2 mb-3"
+            className="flex items-center justify-center md:justify-start gap-2 mb-3"
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -113,9 +109,9 @@ export function ContactCTASection() {
             <div className="w-1 h-6 bg-[#7B2D8B] rounded-full flex-shrink-0" />
           </motion.div>
 
-          {/* heading — matched to PillarsSection h2 */}
+          {/* heading */}
           <motion.h2
-            className="font-bold uppercase font-family-more-sugar text-[#1A1A2E] mb-8"
+            className="font-bold uppercase font-family-more-sugar text-[#1A1A2E] mb-8 text-center md:text-left"
             style={{
               fontSize: "clamp(1.55rem, 2.8vw, 2.5rem)",
               lineHeight: 1.15,
@@ -161,7 +157,7 @@ export function ContactCTASection() {
 
         <div className="relative max-w-screen-xl mx-auto px-4 md:px-10 flex flex-col items-center text-center">
 
-          {/* sub-label — matched to PillarsSection badge */}
+          {/* sub-label */}
           <motion.div
             className="flex items-center gap-2 mb-3"
             initial={{ opacity: 0, y: -10 }}
@@ -179,7 +175,7 @@ export function ContactCTASection() {
             <div className="w-1 h-6 rounded-full flex-shrink-0" style={{ backgroundColor: "#f5c842" }} />
           </motion.div>
 
-          {/* heading — matched to PillarsSection h2 */}
+          {/* heading */}
           <motion.h2
             className="font-bold uppercase font-family-more-sugar text-white mb-6"
             style={{
@@ -249,7 +245,6 @@ export function ContactCTASection() {
               <circle cx="5.5" cy="18.5" r="2.5" />
               <circle cx="18.5" cy="18.5" r="2.5" />
             </svg>
-            {/* shipping note — matched to PillarsSection card <p> */}
             <p
               className="font-bold uppercase font-family-cosmic-sans"
               style={{ fontSize: "13px", lineHeight: "1.6", letterSpacing: "0.05em", color: "rgba(255,255,255,0.45)" }}

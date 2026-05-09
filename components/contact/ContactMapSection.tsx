@@ -68,15 +68,15 @@ export function ContactMapSection() {
 
           {/* RIGHT — districts */}
           <motion.div
-            className="w-full lg:w-1/2 flex flex-col"
+            className="w-full lg:w-1/2 flex flex-col items-center lg:items-start"
             initial={{ opacity: 0, x: 28 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.15 }}
           >
-            {/* sub-label — matched to PillarsSection badge */}
+            {/* sub-label */}
             <motion.div
-              className="flex items-center gap-2 mb-3"
+              className="flex items-center gap-2 mb-3 justify-center lg:justify-start"
               initial={{ opacity: 0, y: -10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -92,9 +92,9 @@ export function ContactMapSection() {
               <div className="w-1 h-6 bg-[#046b46] rounded-full flex-shrink-0" />
             </motion.div>
 
-            {/* heading — matched to PillarsSection h2 */}
+            {/* heading */}
             <h2
-              className="font-bold uppercase font-family-more-sugar text-[#1A1A2E] mb-5"
+              className="font-bold uppercase font-family-more-sugar text-[#1A1A2E] mb-5 text-center lg:text-left"
               style={{
                 fontSize: "clamp(1.55rem, 2.8vw, 2.5rem)",
                 lineHeight: 1.15,
@@ -105,16 +105,16 @@ export function ContactMapSection() {
               <span className="text-[#046b46]">Mithilanchal</span>
             </h2>
 
-            {/* paragraph — matched to PillarsSection card <p> */}
+            {/* paragraph */}
             <p
-              className="font-bold uppercase font-family-cosmic-sans text-[#4b3f3f] mb-7 max-w-[440px]"
+              className="font-bold uppercase font-family-cosmic-sans text-[#4b3f3f] mb-7 max-w-[440px] text-center lg:text-left mx-auto lg:mx-0"
               style={{ fontSize: "13px", lineHeight: "1.6", letterSpacing: "0.05em" }}
             >
               Our sourcing network spans five key districts of North Bihar — the world&apos;s makhana heartland. All grading and dispatch happens from our Katihar facility.
             </p>
 
             {/* District list */}
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 w-full">
               {districts.map((d, i) => (
                 <motion.div
                   key={i}
@@ -130,7 +130,7 @@ export function ContactMapSection() {
                 >
                   <StarDot color={i === 4 ? "#046b46" : "#c14b33"} />
                   <div className="flex items-center justify-between w-full">
-                    {/* district name — matched to PillarsSection card h3 */}
+                    {/* district name */}
                     <span
                       className="font-bold uppercase font-family-more-sugar"
                       style={{
@@ -142,7 +142,7 @@ export function ContactMapSection() {
                     >
                       {d.name}
                     </span>
-                    {/* district note — matched to PillarsSection badge (cosmic-sans, 10px, 0.1em) */}
+                    {/* district note */}
                     <span
                       className="font-bold uppercase font-family-cosmic-sans"
                       style={{ fontSize: "10px", letterSpacing: "0.1em", color: "#7a6f6a" }}

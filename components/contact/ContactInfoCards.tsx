@@ -84,31 +84,11 @@ export function ContactInfoCards() {
       </div>
 
       <div className="relative max-w-screen-xl mx-auto px-4 md:px-10">
-
-        {/* sub-label */}
-        <motion.div
-          className="flex items-center gap-2 mb-8"
-          initial={{ opacity: 0, y: -10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="w-1 h-6 bg-[#046b46] rounded-full flex-shrink-0" />
-          <span
-            className="font-bold uppercase font-family-cosmic-sans text-[#046b46]"
-            style={{ fontSize: "10px", letterSpacing: "0.1em" }}
-          >
-            Contact Channels
-          </span>
-          <div className="w-1 h-6 bg-[#046b46] rounded-full flex-shrink-0" />
-        </motion.div>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
           {cards.map((card, i) => (
             <motion.div
               key={i}
-              /* min-w-0 is critical — prevents grid child from overflowing */
-              className="relative rounded-2xl p-5 md:p-6 flex flex-col gap-3 min-w-0 overflow-hidden"
+              className="relative rounded-2xl p-5 md:p-6 flex flex-col gap-3 items-center lg:items-start min-w-0 overflow-hidden"
               style={{ backgroundColor: card.bg, border: `1.5px solid ${card.border}` }}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -124,21 +104,21 @@ export function ContactInfoCards() {
                 {card.icon}
               </div>
 
-              {/* card type label — cosmic-sans, 10px, 0.1em */}
+              {/* card type label */}
               <span
-                className="font-bold uppercase font-family-cosmic-sans"
+                className="font-bold uppercase font-family-cosmic-sans text-center lg:text-left"
                 style={{ fontSize: "10px", letterSpacing: "0.1em", color: card.accent, opacity: 0.7 }}
               >
                 {card.label}
               </span>
 
-              {/* card value — font size reduced to fit; word-break for long strings like email */}
+              {/* card value */}
               {card.href ? (
                 <a
                   href={card.href}
                   target={card.href.startsWith("http") ? "_blank" : undefined}
                   rel="noopener noreferrer"
-                  className="font-bold uppercase font-family-more-sugar hover:underline"
+                  className="font-bold uppercase font-family-more-sugar hover:underline text-center lg:text-left"
                   style={{
                     fontSize: "clamp(0.85rem, 1.3vw, 1.1rem)",
                     lineHeight: "1.15",
@@ -152,7 +132,7 @@ export function ContactInfoCards() {
                 </a>
               ) : (
                 <p
-                  className="font-bold uppercase font-family-more-sugar"
+                  className="font-bold uppercase font-family-more-sugar text-center lg:text-left"
                   style={{
                     fontSize: "clamp(0.85rem, 1.3vw, 1.1rem)",
                     lineHeight: "1.15",
@@ -166,9 +146,9 @@ export function ContactInfoCards() {
                 </p>
               )}
 
-              {/* card sub — cosmic-sans, 13px, 1.6, 0.05em */}
+              {/* card sub */}
               <p
-                className="font-bold uppercase font-family-cosmic-sans"
+                className="font-bold uppercase font-family-cosmic-sans text-center lg:text-left"
                 style={{ fontSize: "13px", lineHeight: "1.6", letterSpacing: "0.05em", color: "#7a6f6a" }}
               >
                 {card.sub}

@@ -39,7 +39,6 @@ function InputField({
 }) {
   return (
     <div className="flex flex-col gap-1.5">
-      {/* field label — matched to PillarsSection badge (cosmic-sans, 10px, 0.1em) */}
       <label
         htmlFor={name}
         className="font-bold uppercase font-family-cosmic-sans text-[#046b46]"
@@ -117,13 +116,13 @@ export function ContactFormSection() {
 
           {/* LEFT — copy */}
           <motion.div
-            className="w-full lg:w-[38%] flex flex-col justify-start pt-2"
+            className="w-full lg:w-[38%] flex flex-col justify-start items-center lg:items-start pt-2"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.08 }}
           >
-            {/* sub-label — matched to PillarsSection badge */}
+            {/* sub-label */}
             <motion.div
               className="flex items-center gap-2 mb-3"
               initial={{ opacity: 0, y: -10 }}
@@ -141,9 +140,9 @@ export function ContactFormSection() {
               <div className="w-1 h-6 bg-[#c14b33] rounded-full flex-shrink-0" />
             </motion.div>
 
-            {/* heading — matched to PillarsSection h2 */}
+            {/* heading */}
             <h2
-              className="font-bold uppercase font-family-more-sugar text-[#1A1A2E] mb-5"
+              className="font-bold uppercase font-family-more-sugar text-[#1A1A2E] mb-5 text-center lg:text-left"
               style={{
                 fontSize: "clamp(1.55rem, 2.8vw, 2.5rem)",
                 lineHeight: 1.15,
@@ -155,9 +154,9 @@ export function ContactFormSection() {
               <span className="text-[#046b46]">Message.</span>
             </h2>
 
-            {/* paragraph — matched to PillarsSection card <p> */}
+            {/* paragraph */}
             <p
-              className="font-bold uppercase font-family-cosmic-sans text-[#4b3f3f] mb-6 max-w-[320px]"
+              className="font-bold uppercase font-family-cosmic-sans text-[#4b3f3f] mb-6 max-w-[320px] text-center lg:text-left"
               style={{ fontSize: "13px", lineHeight: "1.6", letterSpacing: "0.05em" }}
             >
               Whether it&apos;s a bulk inquiry, a gifting order, or just a question about our 7+ Suta grade — our team responds directly from Katihar.
@@ -171,7 +170,7 @@ export function ContactFormSection() {
             ].map((item, i) => (
               <motion.div
                 key={i}
-                className="flex items-start gap-3 mb-4"
+                className="flex flex-col sm:flex-row items-center lg:items-start gap-3 mb-4 text-center lg:text-left"
                 initial={{ opacity: 0, x: -16 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -184,14 +183,12 @@ export function ContactFormSection() {
                   {item.icon}
                 </div>
                 <div>
-                  {/* promise title — matched to PillarsSection card h3 */}
                   <p
                     className="font-bold uppercase font-family-more-sugar text-[#046b46]"
                     style={{ fontSize: "clamp(1.1rem, 1.8vw, 1.45rem)", lineHeight: "1.15", letterSpacing: "2px" }}
                   >
                     {item.title}
                   </p>
-                  {/* promise desc — matched to PillarsSection card <p> */}
                   <p
                     className="font-bold uppercase font-family-cosmic-sans text-[#7a6f6a]"
                     style={{ fontSize: "13px", lineHeight: "1.6", letterSpacing: "0.05em" }}
@@ -227,14 +224,12 @@ export function ContactFormSection() {
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                 </div>
-                {/* success heading — matched to PillarsSection card h3 */}
                 <h3
                   className="font-bold uppercase font-family-more-sugar text-[#046b46] mb-2"
                   style={{ fontSize: "clamp(1.1rem, 1.8vw, 1.45rem)", lineHeight: "1.15", letterSpacing: "2px" }}
                 >
                   WhatsApp Opened!
                 </h3>
-                {/* success para — matched to PillarsSection card <p> */}
                 <p
                   className="font-bold uppercase font-family-cosmic-sans text-[#4b3f3f]"
                   style={{ fontSize: "13px", lineHeight: "1.6", letterSpacing: "0.05em" }}
@@ -272,6 +267,7 @@ export function ContactFormSection() {
                   >
                     Enquiry Type
                   </span>
+                  {/* ✅ FIX: removed `justify-center` — pills now left-align on all screen sizes */}
                   <div className="flex flex-wrap gap-2">
                     {enquiryTypes.map((t) => (
                       <button
@@ -326,7 +322,7 @@ export function ContactFormSection() {
                 </div>
 
                 {/* Submit */}
-                <div className="flex flex-col sm:flex-row items-center gap-4 pt-1">
+                <div className="flex flex-col items-center sm:flex-row sm:items-center gap-4 pt-1">
                   <button
                     type="submit"
                     className="group relative inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-bold uppercase overflow-hidden transition-all duration-300 hover:shadow-[0_6px_28px_rgba(37,211,102,0.35)] hover:-translate-y-0.5 font-family-cosmic-sans"
@@ -345,9 +341,8 @@ export function ContactFormSection() {
                     <span className="absolute inset-0 bg-white/10 translate-x-[-110%] group-hover:translate-x-[110%] transition-transform duration-500 skew-x-[-20deg]" />
                   </button>
 
-                  {/* helper note — matched to PillarsSection badge (cosmic-sans, 10px, 0.1em) */}
                   <p
-                    className="font-bold uppercase font-family-cosmic-sans text-[#7a6f6a]"
+                    className="font-bold uppercase font-family-cosmic-sans text-[#7a6f6a] text-center sm:text-left"
                     style={{ fontSize: "10px", letterSpacing: "0.1em" }}
                   >
                     Your message will open in WhatsApp
