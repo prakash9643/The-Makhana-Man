@@ -12,8 +12,8 @@ const standardFeatures = [
         <rect x="14" y="0" width="6" height="3" rx="1" fill="#6b6b6b" />
       </svg>
     ),
-    title: "22.2 mm Average",
-    desc: "Sieve-sorted to 7 Suta grade — some variation within the size range permitted",
+    title: "19mm – 21mm Size Range",
+    desc: "Sieve-sorted for size uniformity — some variation within the range permitted",
   },
   {
     icon: (
@@ -25,40 +25,39 @@ const standardFeatures = [
     desc: (
       <>
         Industrial sieves determine passing <br />
-        grade
+        grade — no hand inspection
       </>
-    )
+    ),
   },
   {
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <circle cx="10" cy="10" r="8" stroke="#6b6b6b" strokeWidth="1.5" fill="none" />
-        <ellipse cx="10" cy="10" rx="4" ry="8" stroke="#6b6b6b" strokeWidth="1" fill="none" />
+        <path d="M6 10.5L8.5 13L14 8" stroke="#6b6b6b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
-    title: "Shape Variation Allowed",
+    title: "Available Year-Round",
     desc: (
       <>
-        Minor flat spots, edge chips, and asymmetry  <br />
-        accepted
+        Available throughout the year <br />
+        in consistent supply
       </>
-    )
+    ),
   },
   {
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <rect x="3" y="6" width="14" height="10" rx="2" stroke="#6b6b6b" strokeWidth="1.5" fill="none" />
-        <path d="M7 6V5a3 3 0 016 0v1" stroke="#6b6b6b" strokeWidth="1.5" />
-        <circle cx="10" cy="11" r="1.5" fill="#6b6b6b" />
+        <path d="M3 17C3 10 17 10 17 17" stroke="#6b6b6b" strokeWidth="1.5" strokeLinecap="round" fill="none" />
+        <circle cx="10" cy="6" r="3.5" stroke="#6b6b6b" strokeWidth="1.5" fill="none" />
       </svg>
     ),
-    title: "~5% Breakage Accepted",
-     desc: (
+    title: "Top 30% of Harvest",
+    desc: (
       <>
-        Industry norm for packing grade   <br />
-        makhana
+        Comprises the top 30% of a <br />
+        healthy harvest
       </>
-    )
+    ),
   },
 ]
 
@@ -72,8 +71,8 @@ const plusFeatures = [
         <path d="M16 17L10 14L4 17" stroke="#046b46" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
-    title: "22.2 mm Minimum — Exact",
-    desc: "Only kernels at or above 22.2 mm with no upper deviation pass",
+    title: "22mm+ Size — Exact",
+    desc: "Only kernels at or above 22mm with no upper deviation pass",
   },
   {
     icon: (
@@ -83,8 +82,23 @@ const plusFeatures = [
         <path d="M3 17C3 14 6 12 10 12C14 12 17 14 17 17" stroke="#046b46" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
-    title: "Hand-Sorted After Grading",
-    desc: "Every kernel touched, inspected, and approved by human hands",
+    title: "Dual-Vetted Selection",
+    desc: "Machine graded, then 100% hand-inspected for zero defects — no kernel skipped",
+  },
+  {
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M10 2C10 2 4 5 4 11C4 14.3 6.7 17 10 17C13.3 17 16 14.3 16 11C16 5 10 2 10 2Z" stroke="#046b46" strokeWidth="1.5" fill="none" />
+        <path d="M10 17V19M7 18.5L8 16.5M13 18.5L12 16.5" stroke="#046b46" strokeWidth="1.3" strokeLinecap="round" />
+      </svg>
+    ),
+    title: "July – January Only",
+    desc: (
+      <>
+        Seasonal availability — 6 months only. <br />
+        Rarity is part of the standard.
+      </>
+    ),
   },
   {
     icon: (
@@ -94,18 +108,8 @@ const plusFeatures = [
         <circle cx="10" cy="10" r="1" fill="#046b46" />
       </svg>
     ),
-    title: "Spherically Perfect Only",
-    desc: "Any flat, cracked, or discoloured kernel is removed — zero compromise",
-  },
-  {
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <circle cx="10" cy="10" r="8" stroke="#046b46" strokeWidth="1.5" fill="none" />
-        <path d="M6 10.5L8.5 13L14 8" stroke="#046b46" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-    title: "Zero Breakage Policy",
-    desc: "Individually inspected — if a kernel can't survive a fall, it doesn't ship",
+    title: "Top 1% of Harvest",
+    desc: "Only a fraction of the harvest ever reaches this scale — the rarest grade from Bihar",
   },
 ]
 
@@ -183,7 +187,7 @@ export function GradeAboveGradeSection() {
         aria-hidden="true"
       >
         <span
-          className="font-bold font-family-more-sugar uppercase whitespace-nowrap font-family-more-sugar "
+          className="font-bold font-family-more-sugar uppercase whitespace-nowrap"
           style={{
             fontFamily: "'More Sugar', cursive",
             fontSize: "clamp(60px, 14vw, 180px)",
@@ -201,7 +205,6 @@ export function GradeAboveGradeSection() {
         {/* ── CENTERED HEADER ── */}
         <div className="flex flex-col items-center text-center mb-10 md:mb-14">
 
-          {/* Label — pill on both sides for centered look */}
           <motion.div
             className="flex items-center gap-2 mb-3"
             initial={{ opacity: 0, y: -12 }}
@@ -211,7 +214,7 @@ export function GradeAboveGradeSection() {
           >
             <div className="w-1 h-6 bg-[#c14b33] rounded-full flex-shrink-0" />
             <span
-              className="font-bold uppercase tracking-widest text-[#c14b33] font-family-more-sugar "
+              className="font-bold uppercase tracking-widest text-[#c14b33] font-family-more-sugar"
               style={{ fontFamily: "'More Sugar', cursive", fontSize: "clamp(11px, 1.8vw, 13px)" }}
             >
               The Difference
@@ -219,13 +222,13 @@ export function GradeAboveGradeSection() {
             <div className="w-1 h-6 bg-[#c14b33] rounded-full flex-shrink-0" />
           </motion.div>
 
-          {/* Heading */}
           <motion.h2
-            className="font-bold uppercase text-[#1A1A2E] mb-2 font-family-more-sugar "
+            className="font-bold uppercase text-[#1A1A2E] mb-2 font-family-more-sugar"
             style={{
               fontFamily: "'More Sugar', cursive",
               fontSize: "clamp(28px, 4.5vw, 44px)",
-                lineHeight: 1.15, letterSpacing: "3px",
+              lineHeight: 1.15,
+              letterSpacing: "3px",
             }}
             initial={{ opacity: 0, y: -16 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -247,12 +250,12 @@ export function GradeAboveGradeSection() {
           </motion.p>
         </div>
 
-        {/* ── TWO-COLUMN CARDS — equal height via items-stretch ── */}
+        {/* ── TWO-COLUMN CARDS ── */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-6 items-stretch">
 
-          {/* LEFT — Standard 7 Suta */}
+          {/* LEFT — 6 Suta */}
           <motion.div
-            className="relative rounded-3xl p-6 md:p-8 flex flex-col gap-5 "
+            className="relative rounded-3xl p-6 md:p-8 flex flex-col gap-5"
             style={{
               backgroundColor: "#f3edf8",
               border: "1.5px solid #7b2d8b",
@@ -262,7 +265,6 @@ export function GradeAboveGradeSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            {/* PNG watermark — top-right, properly visible */}
             <div
               className="absolute top-[-30px] right-4 pointer-events-none select-none"
               aria-hidden="true"
@@ -284,14 +286,14 @@ export function GradeAboveGradeSection() {
               >
                 <img
                   src="/images/10.png"
-                  alt="Standard 7 Suta makhana"
+                  alt="Standard 6 Suta makhana"
                   className="w-full h-full object-cover"
                   style={{ filter: "hue-rotate(260deg) saturate(0.6) brightness(0.95)" }}
                 />
               </div>
               <div>
                 <span
-                  className="inline-block font-bold uppercase tracking-widest px-3 py-1 rounded-full font-family-more-sugar "
+                  className="inline-block font-bold uppercase tracking-widest px-3 py-1 rounded-full font-family-more-sugar"
                   style={{
                     fontFamily: "'More Sugar', cursive",
                     fontSize: "clamp(10px, 1.6vw, 12px)",
@@ -314,7 +316,25 @@ export function GradeAboveGradeSection() {
               </div>
             </div>
 
-            {/* Features — flex-1 so both cards grow equally */}
+            {/* Size callout */}
+            <div
+              className="flex items-center gap-2 px-3 py-2 rounded-xl self-start"
+              style={{ backgroundColor: "#ede0f5", border: "1px solid #7b2d8b22" }}
+            >
+              <span
+                className="font-bold font-family-more-sugar uppercase tracking-widest"
+                style={{ fontFamily: "'More Sugar', cursive", fontSize: "clamp(13px, 2vw, 16px)", color: "#7b2d8b" }}
+              >
+                19mm – 21mm
+              </span>
+              <span
+                className="font-bold uppercase font-family-more-sugar tracking-widest"
+                style={{ fontFamily: "'More Sugar', cursive", fontSize: 9, color: "#9b5aab" }}
+              >
+                Size Range
+              </span>
+            </div>
+
             <div className="flex flex-col gap-4 flex-1">
               {standardFeatures.map((f, i) => (
                 <FeatureRow key={i} {...f} delay={0.2 + i * 0.1} accent={false} purple />
@@ -322,7 +342,7 @@ export function GradeAboveGradeSection() {
             </div>
           </motion.div>
 
-          {/* RIGHT — 7 Suta Plus */}
+          {/* RIGHT — 7 Suta+ */}
           <motion.div
             className="relative rounded-3xl p-6 md:p-8 flex flex-col gap-5"
             style={{
@@ -334,7 +354,6 @@ export function GradeAboveGradeSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            {/* PNG watermark — top-right, properly visible */}
             <div
               className="absolute top-[-30px] right-4 pointer-events-none select-none"
               aria-hidden="true"
@@ -350,7 +369,6 @@ export function GradeAboveGradeSection() {
 
             {/* Card header */}
             <div className="flex items-center gap-3 mb-1">
-              {/* PNG avatar circle — green tinted */}
               <div
                 className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#046b46]"
               >
@@ -363,7 +381,7 @@ export function GradeAboveGradeSection() {
               </div>
               <div>
                 <span
-                  className="inline-block font-bold uppercase tracking-widest px-3 py-1 rounded-full font-family-more-sugar "
+                  className="inline-block font-bold uppercase tracking-widest px-3 py-1 rounded-full font-family-more-sugar"
                   style={{
                     fontFamily: "'More Sugar', cursive",
                     fontSize: "clamp(10px, 1.6vw, 12px)",
@@ -371,22 +389,40 @@ export function GradeAboveGradeSection() {
                     color: "#e8f4ee",
                   }}
                 >
-                   ULTRA PREMIUM ✦
+                  ULTRA PREMIUM ✦
                 </span>
                 <p
-                  className="font-bold uppercase leading-none mt-1 font-family-more-sugar "
+                  className="font-bold uppercase leading-none mt-1 font-family-more-sugar"
                   style={{
                     fontFamily: "'More Sugar', cursive",
                     fontSize: "clamp(18px, 3vw, 26px)",
                     color: "#046b46",
                   }}
                 >
-                  7 Suta
+                  7 Suta+
                 </p>
               </div>
             </div>
 
-            {/* Features — flex-1 so both cards grow equally */}
+            {/* Size callout */}
+            <div
+              className="flex items-center gap-2 px-3 py-2 rounded-xl self-start"
+              style={{ backgroundColor: "#d0eadd", border: "1px solid #046b4622" }}
+            >
+              <span
+                className="font-bold font-family-more-sugar uppercase tracking-widest"
+                style={{ fontFamily: "'More Sugar', cursive", fontSize: "clamp(13px, 2vw, 16px)", color: "#046b46" }}
+              >
+                22mm+
+              </span>
+              <span
+                className="font-bold uppercase font-family-more-sugar tracking-widest"
+                style={{ fontFamily: "'More Sugar', cursive", fontSize: 9, color: "#5a8a78" }}
+              >
+                Minimum Size
+              </span>
+            </div>
+
             <div className="flex flex-col gap-4 flex-1">
               {plusFeatures.map((f, i) => (
                 <FeatureRow key={i} {...f} delay={0.3 + i * 0.1} accent={true} />
@@ -395,9 +431,6 @@ export function GradeAboveGradeSection() {
           </motion.div>
 
         </div>
-
-    
-
       </div>
     </section>
   )

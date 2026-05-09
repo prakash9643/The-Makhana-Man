@@ -86,13 +86,10 @@ export function EnquirySection() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <motion.img
-                src="https://aaronature.com/wp-content/uploads/2026/03/14-1.png"
+                 src="/images/newui_comics/pack.jpg.jpeg"
                 alt="Premium Makhana"
-                className="w-[225px] h-[300px] object-cover"
+                className="w-[225px] object-cover"
               />
-              <span className="font-family-more-sugar absolute -bottom-3 left-1/2 -translate-x-1/2 bg-[#7b2d8b] text-white text-[9px] font-bold tracking-widest uppercase px-3 py-1 rounded-full whitespace-nowrap">
-                Classic Makhana
-              </span>
             </motion.div>
           </div>
 
@@ -295,13 +292,10 @@ export function EnquirySection() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <motion.img
-                src="https://aaronature.com/wp-content/uploads/2026/03/13.png"
+                src="/images/newui_comics/pack.jpg.jpeg"
                 alt="Custom Pack"
-                className="w-[225px] h-[300px] object-cover"
+                className="w-[225px]  object-cover"
               />
-              <span className="font-family-more-sugar absolute -bottom-3 left-1/2 -translate-x-1/2 bg-[#7b2d8b] text-white text-[9px] font-bold tracking-widest uppercase px-3 py-1 rounded-full whitespace-nowrap">
-                Premium Makhana
-              </span>
             </motion.div>
           </div>
 

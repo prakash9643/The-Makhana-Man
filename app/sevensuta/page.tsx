@@ -5,7 +5,7 @@ import { ChoiceIsClearSection } from "@/components/SevenSuta/Choiceisclearsectio
 import { GradeAboveGradeSection } from "@/components/SevenSuta/Gradeabovegradesection"
 import { ManifestoSection } from "@/components/SevenSuta/ManifestoSection"
 import { SevenSutaHero } from "@/components/SevenSuta/SevenSuttaHero"
-import { WhereItComesFromSection } from "@/components/SevenSuta/Whereitcomesfromsection"
+import { TheProcessSection } from "@/components/SevenSuta/TheProcessSection"
 import useSmoothScroll from "@/hooks/useSmoothScroll"
 export default function sevensuta() {
 
@@ -16,7 +16,7 @@ export default function sevensuta() {
       <SevenSutaHero />
       <ManifestoSection />
       <GradeAboveGradeSection />
-      <WhereItComesFromSection />
+      <TheProcessSection />
       <ChoiceIsClearSection />
     </div>
   )
