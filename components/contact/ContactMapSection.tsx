@@ -22,7 +22,7 @@ function StarDot({ color = "#046b46" }: { color?: string }) {
 export function ContactMapSection() {
   return (
     <section
-      className="relative pt-14 pb-14 overflow-hidden"
+      className="relative pt-16 md:pt-24 pb-16 md:pb-24 overflow-hidden"
       style={{ backgroundColor: "#f9f3ea" }}
     >
       {/* Ghost watermark */}
@@ -32,18 +32,13 @@ export function ContactMapSection() {
       >
         <span
           className="font-bold uppercase whitespace-nowrap font-family-more-sugar"
-          style={{
-            fontSize: "clamp(60px, 14vw, 190px)",
-            opacity: 0.03,
-            color: "#1A1A2E",
-            letterSpacing: "0.04em",
-          }}
+          style={{ fontSize: "clamp(60px,14vw,190px)", opacity: 0.03, color: "#1A1A2E", letterSpacing: "0.04em" }}
         >
           BIHAR
         </span>
       </div>
 
-      <div className="relative max-w-screen-xl mx-auto px-4 md:px-8">
+      <div className="relative max-w-screen-xl mx-auto px-4 md:px-10">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
 
           {/* LEFT — map embed */}
@@ -56,10 +51,7 @@ export function ContactMapSection() {
           >
             <div
               className="relative rounded-3xl overflow-hidden"
-              style={{
-                border: "2px solid #046b46",
-                boxShadow: "0 8px 40px rgba(4,107,70,0.15)",
-              }}
+              style={{ border: "2px solid #046b46", boxShadow: "0 8px 40px rgba(4,107,70,0.15)" }}
             >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.4!2d87.5771!3d25.5394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef94b04a0c4f3f%3A0x9b48e24b2a3e0a9c!2sKatihar%2C%20Bihar!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
@@ -71,7 +63,6 @@ export function ContactMapSection() {
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Katihar Bihar Map"
               />
-            
             </div>
           </motion.div>
 
@@ -83,24 +74,41 @@ export function ContactMapSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.15 }}
           >
-            <div className="flex items-center gap-2 mb-6">
+            {/* sub-label — matched to PillarsSection badge */}
+            <motion.div
+              className="flex items-center gap-2 mb-3"
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
               <div className="w-1 h-6 bg-[#046b46] rounded-full flex-shrink-0" />
-              <span className="font-bold uppercase tracking-widest text-[#046b46] text-[12px] sm:text-[13px] font-family-more-sugar">
+              <span
+                className="font-bold uppercase font-family-cosmic-sans text-[#046b46]"
+                style={{ fontSize: "10px", letterSpacing: "0.1em" }}
+              >
                 Where We Operate
               </span>
-            </div>
+              <div className="w-1 h-6 bg-[#046b46] rounded-full flex-shrink-0" />
+            </motion.div>
 
+            {/* heading — matched to PillarsSection h2 */}
             <h2
-              className="font-bold uppercase leading-[1.0] text-[#1A1A2E] mb-5 font-family-more-sugar"
-              style={{ fontSize: "clamp(26px, 4vw, 42px)" }}
+              className="font-bold uppercase font-family-more-sugar text-[#1A1A2E] mb-5"
+              style={{
+                fontSize: "clamp(1.55rem, 2.8vw, 2.5rem)",
+                lineHeight: 1.15,
+                letterSpacing: "3px",
+              }}
             >
               Rooted in<br />
               <span className="text-[#046b46]">Mithilanchal</span>
             </h2>
 
+            {/* paragraph — matched to PillarsSection card <p> */}
             <p
-              className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] mb-7 max-w-[440px] font-family-cosmic-sans"
-              style={{ fontSize: "clamp(11px, 1.5vw, 13px)" }}
+              className="font-bold uppercase font-family-cosmic-sans text-[#4b3f3f] mb-7 max-w-[440px]"
+              style={{ fontSize: "13px", lineHeight: "1.6", letterSpacing: "0.05em" }}
             >
               Our sourcing network spans five key districts of North Bihar — the world&apos;s makhana heartland. All grading and dispatch happens from our Katihar facility.
             </p>
@@ -122,23 +130,30 @@ export function ContactMapSection() {
                 >
                   <StarDot color={i === 4 ? "#046b46" : "#c14b33"} />
                   <div className="flex items-center justify-between w-full">
+                    {/* district name — matched to PillarsSection card h3 */}
                     <span
                       className="font-bold uppercase font-family-more-sugar"
-                      style={{ fontSize: "clamp(12px, 2vw, 14px)", color: i === 4 ? "#046b46" : "#1A1A2E" }}
+                      style={{
+                        fontSize: "clamp(1.1rem, 1.8vw, 1.45rem)",
+                        lineHeight: "1.15",
+                        letterSpacing: "2px",
+                        color: i === 4 ? "#046b46" : "#1A1A2E",
+                      }}
                     >
                       {d.name}
                     </span>
+                    {/* district note — matched to PillarsSection badge (cosmic-sans, 10px, 0.1em) */}
                     <span
-                      className="font-bold uppercase tracking-widest font-family-cosmic-sans"
-                      style={{ fontSize: "9px", color: "#7a6f6a" }}
+                      className="font-bold uppercase font-family-cosmic-sans"
+                      style={{ fontSize: "10px", letterSpacing: "0.1em", color: "#7a6f6a" }}
                     >
                       {d.note}
                     </span>
                   </div>
                   {i === 4 && (
                     <span
-                      className="flex-shrink-0 font-bold uppercase tracking-widest px-2 py-0.5 rounded-full font-family-cosmic-sans"
-                      style={{ fontSize: "8px", backgroundColor: "#046b46", color: "#fff" }}
+                      className="flex-shrink-0 font-bold uppercase font-family-cosmic-sans px-2 py-0.5 rounded-full"
+                      style={{ fontSize: "10px", letterSpacing: "0.1em", backgroundColor: "#046b46", color: "#fff" }}
                     >
                       HQ
                     </span>

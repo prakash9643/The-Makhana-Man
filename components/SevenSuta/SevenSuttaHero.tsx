@@ -76,14 +76,14 @@ export function SevenSutaHero() {
             </motion.div>
 
             <motion.h1
-              className="hero-title font-bold uppercase leading-[0.9] text-[#046b46] mb-4 font-family-cosmic-sans"
-              style={{ fontSize: "clamp(42px, 7vw, 88px)" }}
+              className="hero-title font-bold uppercase text-[#046b46] mb-4 font-family-cosmic-sans"
+              style={{ fontSize: "clamp(42px, 7vw, 88px)",   lineHeight: 1.15, letterSpacing: "3px", }}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.18 }}
             >
               7+{" "}
-              <span className="text-[#046b46]" style={{ WebkitTextStroke: "2px #046b46" }}>
+              <span className="text-[#046b46]" style={{ WebkitTextStroke: "2px #046b46",   lineHeight: 1.15, letterSpacing: "3px", }}>
                 Suta
               </span>
             </motion.h1>
@@ -98,7 +98,7 @@ export function SevenSutaHero() {
                 <span className="font-bold text-[#046b46] text-[22px] sm:text-[28px] leading-none font-family-more-sugar">
                   22.2 mm+
                 </span>
-                <span className="text-[#1A1A2E] font-bold uppercase text-[10px] sm:text-[11px] tracking-widest leading-tight font-family-cosmic-sans">
+                <span className="text-[#1A1A2E] font-bold uppercase text-[10px] sm:text-[11px] font-family-cosmic-sans" >
                   7+ Suta<br />Grade
                 </span>
               </div>

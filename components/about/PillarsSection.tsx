@@ -1,7 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import Link from "next/link"
 
 const pillars = [
   {
@@ -33,14 +32,14 @@ const pillars = [
 export default function PillarsSection() {
   return (
     <section
-      className="relative pt-16 md:pt-20 pb-16 md:pb-20 overflow-hidden"
+      className="relative pt-16 md:pt-24 pb-16 md:pb-24 overflow-hidden"
       style={{ background: "linear-gradient(180deg, #f7eddd 0%, #fdf5e8 60%, #e8f2ec 100%)" }}
     >
       {/* ghost */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden" aria-hidden="true">
         <span
           className="font-bold uppercase whitespace-nowrap font-family-more-sugar"
-          style={{ fontSize: "clamp(60px,14vw,180px)", opacity: 0.03, color: "#1A1A2E", letterSpacing: "0.05em" }}
+          style={{ fontSize: "clamp(60px,14vw,180px)", opacity: 0.03, color: "#1A1A2E", letterSpacing: "0.04em" }}
         >
           HOW WE DO IT
         </span>
@@ -50,6 +49,7 @@ export default function PillarsSection() {
 
         {/* header */}
         <div className="flex flex-col items-center text-center mb-12">
+          {/* sub-label — same as AboutHero badge text */}
           <motion.div
             className="flex items-center gap-2 mb-3"
             initial={{ opacity: 0, y: -10 }}
@@ -58,14 +58,24 @@ export default function PillarsSection() {
             transition={{ duration: 0.6 }}
           >
             <div className="w-1 h-6 bg-[#046b46] rounded-full" />
-            <span className="font-bold uppercase tracking-widest text-[#046b46] text-[12px] font-family-more-sugar">
+            <span
+              className="font-bold uppercase text-[#046b46] font-family-cosmic-sans"
+              style={{ fontSize: "10px", letterSpacing: "0.1em" }}
+            >
               How We Do It
             </span>
             <div className="w-1 h-6 bg-[#046b46] rounded-full" />
           </motion.div>
+
+          {/* heading — pure inline styles, no class conflicts */}
           <motion.h2
-            className="font-bold uppercase leading-[1.0] text-[#1A1A2E] font-family-more-sugar"
-            style={{ fontSize: "clamp(28px, 4.5vw, 48px)" }}
+            className="font-bold uppercase font-family-more-sugar"
+            style={{
+              fontSize: "clamp(1.55rem, 2.8vw, 2.5rem)",
+              lineHeight: 1.15,
+              letterSpacing: "3px",
+              color: "#1A1A2E",
+            }}
             initial={{ opacity: 0, y: -14 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -89,26 +99,34 @@ export default function PillarsSection() {
             >
               {/* makhana watermark */}
               <div className="absolute top-[-28px] right-4 pointer-events-none select-none" aria-hidden="true" style={{ width: 90, height: 90 }}>
-                <img src="/images/10.png" alt="" className="w-full h-full object-contain opacity-30" draggable={false} />
+                <img src="/images/10.png" alt="" className="w-full h-full object-contain " draggable={false} />
               </div>
 
+              {/* number */}
               <span
                 className="font-bold font-family-more-sugar"
-                style={{ fontSize: "clamp(40px, 6vw, 60px)", color: p.color, opacity: 0.2, lineHeight: 1 }}
+                style={{ fontSize: "clamp(36px, 5vw, 52px)", color: p.color, opacity: 0.2, lineHeight: "1", letterSpacing: "3px" }}
               >
                 {p.num}
               </span>
 
+              {/* card heading — font-family-more-sugar has no letter-spacing/line-height in global CSS so inline works fine */}
               <h3
-                className="font-bold uppercase leading-tight font-family-more-sugar whitespace-pre-line"
-                style={{ fontSize: "clamp(20px, 3vw, 28px)", color: p.color }}
+                className="font-bold uppercase font-family-more-sugar whitespace-pre-line"
+                style={{
+                  fontSize: "clamp(1.1rem, 1.8vw, 1.45rem)",
+                  lineHeight: "1.15",
+                  letterSpacing: "2px",
+                  color: p.color,
+                }}
               >
                 {p.title}
               </h3>
 
+              {/* paragraph — font-family-cosmic-sans has no line-height/letter-spacing in global CSS so inline works fine */}
               <p
-                className="font-bold uppercase tracking-wide leading-relaxed font-family-more-sugar text-[#4b3f3f]"
-                style={{ fontSize: "clamp(11px, 1.6vw, 13px)" }}
+                className="font-bold uppercase font-family-cosmic-sans"
+                style={{ fontSize: "13px", lineHeight: "1.6", letterSpacing: "0.05em", color: "#4b3f3f" }}
               >
                 {p.desc}
               </p>

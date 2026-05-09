@@ -1,21 +1,11 @@
 "use client"
 
 import { motion } from "framer-motion"
-import Link from "next/link"
-
-function StarDot({ color = "#046b46" }: { color?: string }) {
-  return (
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="inline-block shrink-0">
-      <circle cx="8" cy="8" r="8" fill={color} opacity="0.13" />
-      <circle cx="8" cy="8" r="3.5" fill={color} />
-    </svg>
-  )
-}
 
 function BadgePill({ children, green }: { children: React.ReactNode; green?: boolean }) {
   return (
     <span
-      className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-bold uppercase text-[11px] tracking-widest font-family-cosmic-sans ${
+      className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-bold uppercase text-[12px] tracking-widest font-family-cosmic-sans ${
         green
           ? "border border-[#046b46] text-[#046b46] bg-white/60"
           : "border border-[#7B2D8B] text-[#7B2D8B] bg-white/60"
@@ -34,7 +24,10 @@ export default function MissionSection() {
       style={{ backgroundColor: "#f9f3ea" }}
     >
       {/* ghost watermark */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden" aria-hidden="true">
+      <div
+        className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden"
+        aria-hidden="true"
+      >
         <span
           className="font-bold uppercase whitespace-nowrap font-family-more-sugar"
           style={{ fontSize: "clamp(70px,17vw,200px)", opacity: 0.035, color: "#1A1A2E", letterSpacing: "0.04em" }}
@@ -54,7 +47,7 @@ export default function MissionSection() {
           transition={{ duration: 0.6 }}
         >
           <div className="w-1 h-6 bg-[#c14b33] rounded-full flex-shrink-0" />
-          <span className="font-bold uppercase tracking-widest text-[#c14b33] text-[12px] sm:text-[13px] font-family-more-sugar">
+          <span className="font-bold uppercase tracking-widest text-[#c14b33] text-[13px] font-family-cosmic-sans">
             Why We Exist
           </span>
         </motion.div>
@@ -70,8 +63,11 @@ export default function MissionSection() {
             transition={{ duration: 0.7, delay: 0.08 }}
           >
             <h2
-              className="font-bold uppercase leading-[1.0] text-[#1A1A2E] font-family-more-sugar"
-              style={{ fontSize: "clamp(34px, 5vw, 54px)" }}
+              className="font-bold uppercase text-[#1A1A2E] hero-title tracking-tight"
+              style={{
+                fontSize: "clamp(1.55rem, 2.8vw, 2.5rem)",
+                lineHeight: 1.15,
+              }}
             >
               Potato chips<br />
               are in{" "}
@@ -110,7 +106,8 @@ export default function MissionSection() {
             ].map((para, i) => (
               <motion.p
                 key={i}
-                className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] text-[12px] sm:text-[13px] md:text-[14px] font-family-more-sugar"
+                className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] font-family-cosmic-sans"
+                style={{ fontSize: "13px" }}
                 initial={{ opacity: 0, y: 14 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -128,7 +125,10 @@ export default function MissionSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.65, delay: 0.55 }}
             >
-              <p className="font-bold uppercase text-[#046b46] leading-snug tracking-wide text-[13px] sm:text-[15px] md:text-[16px] font-family-more-sugar">
+              <p
+                className="font-bold uppercase text-[#046b46] leading-snug tracking-wide font-family-cosmic-sans"
+                style={{ fontSize: "13px" }}
+              >
                 "If you believe in making the world snack better, you are in the right place."
               </p>
             </motion.blockquote>

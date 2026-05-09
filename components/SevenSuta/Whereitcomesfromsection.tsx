@@ -57,7 +57,7 @@ export function WhereItComesFromSection() {
             >
               <div className="w-1 h-6 bg-[#046b46] rounded-full flex-shrink-0" />
               <span
-                className="font-bold uppercase tracking-widest text-[#046b46] text-[12px] sm:text-[13px] font-family-more-sugar"
+                className="font-bold uppercase tracking-widest text-[#046b46] text-[12px] sm:text-[13px] font-family-more-sugar" 
               >
                 Where Our Makhana Comes From
               </span>
@@ -65,9 +65,10 @@ export function WhereItComesFromSection() {
 
             {/* Headline */}
             <motion.h2
-              className="font-bold uppercase leading-[1.0] text-[#1A1A2E] mb-5 font-family-more-sugar"
+              className="font-bold uppercase  text-[#1A1A2E] mb-5 font-family-more-sugar"
               style={{
                 fontSize: "clamp(32px, 5vw, 56px)",
+                  lineHeight: 1.15, letterSpacing: "3px",
               }}
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}

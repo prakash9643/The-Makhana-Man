@@ -221,10 +221,11 @@ export function GradeAboveGradeSection() {
 
           {/* Heading */}
           <motion.h2
-            className="font-bold uppercase leading-[1.0] text-[#1A1A2E] mb-2 font-family-more-sugar "
+            className="font-bold uppercase text-[#1A1A2E] mb-2 font-family-more-sugar "
             style={{
               fontFamily: "'More Sugar', cursive",
               fontSize: "clamp(28px, 4.5vw, 44px)",
+                lineHeight: 1.15, letterSpacing: "3px",
             }}
             initial={{ opacity: 0, y: -16 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -117,10 +117,11 @@ export function ChoiceIsClearSection() {
 
         {/* Heading */}
         <motion.h2
-          className="font-bold uppercase leading-[1.0] text-white mb-5 font-family-more-sugar "
+          className="font-bold uppercase text-white mb-5 font-family-more-sugar "
           style={{
             fontFamily: "'More Sugar', cursive",
             fontSize: "clamp(26px, 6vw, 68px)",
+              lineHeight: 1.15, letterSpacing: "3px",
           }}
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -155,25 +156,6 @@ export function ChoiceIsClearSection() {
             </span>
           ))}
         </motion.div>
-
-        {/* Body copy */}
-        {/* <motion.p
-          className="font-bold uppercase leading-relaxed tracking-wide text-white/75 max-w-2xl mb-10 font-family-more-sugar"
-          style={{
-            fontFamily: "'More Sugar', cursive",
-            fontSize: "clamp(11px, 1.8vw, 15px)",
-          }}
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.28 }}
-        >
-          Once you've eaten a kernel chosen by hand, selected twice over,
-          and roasted to order —{" "}
-          <span className="text-white">
-            there's simply no going back to ordinary makhana.
-          </span>
-        </motion.p> */}
 
         {/* CTA Buttons */}
         <motion.div

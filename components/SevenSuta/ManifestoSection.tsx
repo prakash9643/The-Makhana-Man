@@ -57,10 +57,11 @@ export function ManifestoSection() {
             transition={{ duration: 0.7, delay: 0.1 }}
           >
             <h2
-              className="font-bold uppercase leading-[1.0] text-[#1A1A2E] font-family-more-sugar "
+              className="font-bold uppercase text-[#1A1A2E] font-family-more-sugar "
               style={{
                 fontFamily: "'More Sugar', cursive",
                 fontSize: "clamp(36px, 5.5vw, 52px)",
+                  lineHeight: 1.15, letterSpacing: "3px",
               }}
             >
               Good<br />
