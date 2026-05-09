@@ -40,7 +40,7 @@ export default function MissionSection() {
 
         {/* label */}
         <motion.div
-          className="flex items-center gap-2 mb-8"
+          className="flex items-center justify-center lg:justify-start gap-2 mb-8"
           initial={{ opacity: 0, y: -12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -56,7 +56,7 @@ export default function MissionSection() {
 
           {/* LEFT — bold headline */}
           <motion.div
-            className="w-full lg:w-[42%] flex-shrink-0"
+            className="w-full lg:w-[42%] flex-shrink-0 text-center lg:text-left"
             initial={{ opacity: 0, x: -28 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -78,7 +78,7 @@ export default function MissionSection() {
             </h2>
 
             <motion.div
-              className="flex flex-wrap gap-2 mt-6"
+              className="flex flex-wrap justify-center lg:justify-start gap-2 mt-6"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -93,7 +93,7 @@ export default function MissionSection() {
 
           {/* RIGHT — body text */}
           <motion.div
-            className="w-full lg:w-[58%] flex flex-col gap-5"
+            className="w-full lg:w-[58%] flex flex-col gap-5 text-center lg:text-left"
             initial={{ opacity: 0, x: 28 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -119,7 +119,7 @@ export default function MissionSection() {
 
             {/* quote */}
             <motion.blockquote
-              className="border-l-[3px] border-[#046b46] pl-5 py-1 my-2"
+              className="border-l-[3px] border-[#046b46] pl-5 py-1 my-2 text-left"
               initial={{ opacity: 0, x: -14 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}

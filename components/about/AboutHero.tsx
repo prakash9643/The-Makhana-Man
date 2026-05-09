@@ -55,14 +55,18 @@ export default function AboutHero() {
       </div>
 
       <div className="relative max-w-screen-2xl mx-auto px-4 md:px-10 w-full">
-        <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-10">
+        {/*
+          Mobile  → flex-col-reverse  : mascot (second in DOM) renders FIRST visually, then text
+          Desktop → flex-row          : side-by-side, text left / mascot right
+        */}
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-6 lg:gap-10">
 
-          {/* text */}
-          <div className="w-full lg:w-[58%] flex flex-col justify-center z-10">
+          {/* ── TEXT ────────────────────────────────────────────────────── */}
+          <div className="w-full lg:w-[58%] flex flex-col justify-center z-10 items-center lg:items-start text-center lg:text-left">
 
             {/* badges */}
             <motion.div
-              className="flex flex-wrap items-center gap-2 mb-4"
+              className="flex flex-wrap items-center justify-center lg:justify-start gap-2 mb-4"
               initial={{ opacity: 0, x: -24 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
@@ -77,7 +81,7 @@ export default function AboutHero() {
               </span>
             </motion.div>
 
-            {/* heading — same font size as MissionSection h2 */}
+            {/* heading */}
             <motion.h1
               className="font-bold text-white mb-3 tracking-tight uppercase hero-title"
               style={{
@@ -93,9 +97,9 @@ export default function AboutHero() {
               As Common As Potato Chips.
             </motion.h1>
 
-            {/* subtext — same size as MissionSection body text */}
+            {/* subtext */}
             <motion.p
-              className="font-bold uppercase tracking-wide leading-relaxed text-white/65 mb-6 max-w-[440px] font-family-cosmic-sans"
+              className="font-bold uppercase tracking-wide leading-relaxed text-white/65 mb-6 max-w-[440px] font-family-cosmic-sans mx-auto lg:mx-0"
               style={{ fontSize: "13px" }}
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -108,7 +112,7 @@ export default function AboutHero() {
 
             {/* CTA buttons */}
             <motion.div
-              className="flex flex-wrap gap-3"
+              className="flex flex-wrap justify-center lg:justify-start gap-3"
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, delay: 0.38 }}
@@ -133,7 +137,7 @@ export default function AboutHero() {
             </motion.div>
           </div>
 
-          {/* mascot */}
+          {/* ── MASCOT ──────────────────────────────────────────────────── */}
           <motion.div
             className="w-full lg:w-[42%] flex items-center justify-center"
             initial={{ opacity: 0, scale: 0.92 }}

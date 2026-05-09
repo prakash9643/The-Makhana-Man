@@ -60,9 +60,9 @@ export default function KarhagolaSectionSection() {
           </motion.div>
 
           {/* content */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center order-1 lg:order-2">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start order-1 lg:order-2">
 
-            {/* sub-label — AboutHero badge style: cosmic-sans, 10px, letterSpacing 0.1em */}
+            {/* sub-label */}
             <motion.div
               className="flex items-center gap-2 mb-6"
               initial={{ opacity: 0, y: -12 }}
@@ -79,9 +79,9 @@ export default function KarhagolaSectionSection() {
               </span>
             </motion.div>
 
-            {/* h2 — AboutHero h1 style: more-sugar, letterSpacing 3px, lineHeight 1.15 */}
+            {/* h2 */}
             <motion.h2
-              className="font-bold uppercase font-family-more-sugar mb-5"
+              className="font-bold uppercase font-family-more-sugar mb-5 text-center lg:text-left"
               style={{
                 fontSize: "clamp(1.55rem, 2.8vw, 2.5rem)",
                 lineHeight: "1.15",
@@ -100,14 +100,14 @@ export default function KarhagolaSectionSection() {
               grows.
             </motion.h2>
 
-            {/* paragraphs — AboutHero subtext style: cosmic-sans, 13px, lineHeight 1.6, letterSpacing 0.05em */}
+            {/* paragraphs */}
             {[
               "We didn't just set up operations near Bihar — we set up inside it. Our dedicated processing and grading facility sits in Karhagola, at the heart of the world's makhana-growing region.",
               "This means shorter farm-to-pack distances, fresher product, more traceability, and direct economic contribution to the farming communities we work with. Every bag of makhana you receive carries the soul of Bihar in it.",
             ].map((para, i) => (
               <motion.p
                 key={i}
-                className="font-bold uppercase font-family-cosmic-sans mb-4"
+                className="font-bold uppercase font-family-cosmic-sans mb-4 text-center lg:text-left"
                 style={{
                   fontSize: "13px",
                   lineHeight: "1.6",
@@ -126,7 +126,7 @@ export default function KarhagolaSectionSection() {
 
             {/* stats */}
             <motion.div
-              className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-6 pt-7 border-t border-[#1A1A2E]/10"
+              className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-6 pt-7 border-t border-[#1A1A2E]/10 w-full"
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -137,10 +137,9 @@ export default function KarhagolaSectionSection() {
                 { val: "7S+",  label: "Only grade\nwe process" },
                 { val: "3×",   label: "Hand-touch\nbefore shipping" },
               ].map((s, i) => (
-                <div key={i} className="flex flex-col gap-1">
+                <div key={i} className="flex flex-col gap-1 items-center lg:items-start">
                   <div className="flex items-center gap-1.5">
                     <StarDot />
-                    {/* stat value — more-sugar, letterSpacing 3px, lineHeight 1 */}
                     <span
                       className="font-bold font-family-more-sugar"
                       style={{
@@ -153,9 +152,8 @@ export default function KarhagolaSectionSection() {
                       {s.val}
                     </span>
                   </div>
-                  {/* stat label — cosmic-sans, 10px, letterSpacing 0.1em */}
                   <span
-                    className="font-bold uppercase whitespace-pre-line font-family-cosmic-sans"
+                    className="font-bold uppercase whitespace-pre-line font-family-cosmic-sans text-center lg:text-left"
                     style={{
                       fontSize: "clamp(9px, 1.2vw, 10px)",
                       letterSpacing: "0.1em",
