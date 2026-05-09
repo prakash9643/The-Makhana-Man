@@ -125,7 +125,7 @@ export default function AboutHero() {
                 Explore Products
               </Link>
               <Link
-                href="https://wa.me/919999999999"
+                 href="https://wa.me/917739756165?text=Hi%2C%20I%20want%20to%20order%207%20Suta%20Makhana"
                 target="_blank"
                 className="font-family-cosmic-sans inline-flex items-center gap-2 px-6 py-2.5 rounded-full font-bold uppercase tracking-widest text-[11px] border-2 border-white/30 text-white transition-all duration-300 hover:bg-white/10"
               >

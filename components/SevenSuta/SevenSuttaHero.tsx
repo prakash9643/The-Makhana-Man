@@ -135,7 +135,7 @@ export function SevenSutaHero() {
               </Link>
 
               <Link
-                href="https://wa.me/yourwhatsappnumber"
+                       href="https://wa.me/917739756165?text=Hi%2C%20I%20want%20to%20order%207%20Suta%20Makhana"
                 target="_blank"
                 className="font-family-cosmic-sans inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-[#25D366] text-[#25D366] font-bold uppercase tracking-widest text-[12px] sm:text-[13px] hover:bg-[#25D366] hover:text-white transition-all duration-300"
               >

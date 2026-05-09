@@ -202,7 +202,7 @@ export function ContactCTASection() {
             transition={{ duration: 0.65, delay: 0.25 }}
           >
             <a
-              href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20order%207%20Suta%20Makhana"
+              href="https://wa.me/917739756165?text=Hi%2C%20I%20want%20to%20order%207%20Suta%20Makhana"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative inline-flex items-center gap-2 font-bold uppercase px-8 py-4 rounded-full overflow-hidden transition-all duration-300 hover:-translate-y-0.5 font-family-cosmic-sans"

@@ -10,9 +10,9 @@ const cards = [
       </svg>
     ),
     label: "WhatsApp",
-    value: "+91 99999 99999",
+    value: "+917739756165",
     sub: "Mon–Sat · 9am to 7pm IST",
-    href: "https://wa.me/919999999999",
+    href: "https://wa.me/917739756165",
     accent: "#25D366",
     bg: "#e8f8ee",
     border: "#25D366",

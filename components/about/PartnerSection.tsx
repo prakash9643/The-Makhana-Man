@@ -204,7 +204,7 @@ export default function PartnerSection() {
 
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <Link
-              href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20partner%20with%20The%20Makhana%20Man"
+                       href="https://wa.me/917739756165?text=Hi%2C%20I%20want%20to%20order%207%20Suta%20Makhana"
               target="_blank"
               className="font-family-cosmic-sans inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold uppercase transition-all duration-300 hover:brightness-110"
               style={{ fontSize: "13px", lineHeight: "1.6", letterSpacing: "0.05em", backgroundColor: "#f5c842", color: "#0a3d26" }}

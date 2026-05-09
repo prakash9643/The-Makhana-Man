@@ -386,7 +386,7 @@ export default function PrivacyPolicy() {
                           </svg>
                         </span>
                         <span className="font-family-cosmic-sans text-[13px] font-bold text-[#1A1A2E]">
-                          +91-XXXXXXXXXX
+                          +91-77397 56165
                         </span>
                       </div>
                     </div>

@@ -404,21 +404,7 @@ export default async function ProductsPage() {
                         </span>
                       )}
 
-                      {/* CTA */}
-                      <div
-                        className={[
-                          "mt-auto text-center font-family-cosmic-sans text-[11px] font-bold",
-                          "py-[7px] rounded-xl transition-all duration-200",
-                          g.isSpecialization
-                            ? "bg-[#1a5c3a] text-white group-hover:bg-[#154d30]"
-                            : g.href === "#"
-                              ? "border border-[#e3dbd0] text-[#bbb] cursor-default"
-                              : "border border-[#1a5c3a] text-[#1a5c3a] group-hover:bg-[#1a5c3a] group-hover:text-white",
-                        ].join(" ")}
-                      >
-                        {g.isSpecialization ? "Explore →" : g.href === "#" ? "Coming Soon" : "Shop Now →"}
-                      </div>
-
+                   
                     </div>
                   </div>
               ))}
