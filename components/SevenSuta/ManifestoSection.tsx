@@ -95,7 +95,7 @@ export function ManifestoSection() {
           >
             {/* The 1% Standard heading */}
             <motion.h3
-              className="font-bold uppercase text-[#c14b33] text-[18px] sm:text-[20px] md:text-[22px]"
+              className="font-bold uppercase text-[#c14b33] text-[18px] sm:text-[20px] md:text-[22px] font-family-more-sugar"
               style={{ fontFamily: "'More Sugar', cursive" }}
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -111,7 +111,7 @@ export function ManifestoSection() {
             ].map((para, i) => (
               <motion.p
                 key={i}
-                className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] text-[12px] sm:text-[13px] md:text-[14px]"
+                className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] text-[12px] sm:text-[13px] md:text-[14px] font-family-more-sugar"
                 style={{ fontFamily: "'More Sugar', cursive" }}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -131,7 +131,7 @@ export function ManifestoSection() {
               transition={{ duration: 0.65, delay: 0.5 }}
             >
               <p
-                className="font-bold uppercase text-[#7B2D8B] leading-snug tracking-wide text-[13px] sm:text-[15px] md:text-[16px]"
+                className="font-bold font-family-more-sugar uppercase text-[#7B2D8B] leading-snug tracking-wide text-[13px] sm:text-[15px] md:text-[16px]"
                 style={{ fontFamily: "'More Sugar', cursive" }}
               >
                 "We don't just sell makhana; we curate the top 1% of the harvest."
@@ -139,7 +139,7 @@ export function ManifestoSection() {
             </motion.blockquote>
 
             <motion.p
-              className="font-bold uppercase tracking-wide leading-relaxed text-[#4b3f3f] text-[12px] sm:text-[13px] md:text-[14px]"
+              className="font-bold uppercase font-family-more-sugar tracking-wide leading-relaxed text-[#4b3f3f] text-[12px] sm:text-[13px] md:text-[14px]"
               style={{ fontFamily: "'More Sugar', cursive" }}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
