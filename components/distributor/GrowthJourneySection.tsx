@@ -68,14 +68,14 @@ export default function GrowthJourneySection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.65 }}
-                    className="rounded-2xl px-6 md:px-14 py-8 md:py-10"
+                    className="rounded-2xl px-4 py-7 md:px-14 md:py-10"
                     style={{ backgroundColor: "#1a4d35" }}
                 >
                     {/* Badge */}
-                    <div className="flex justify-center mb-7">
+                    <div className="flex justify-start md:justify-center mb-6 md:mb-7">
                         <h2
-                            className="text-[20px] md:text-[34px] font-bold"
-                            style={{ fontFamily: '"MoreSugar"', letterSpacing: "3px", color: "#c9a84c" }}
+                            className="text-left text-[20px] leading-tight md:text-center md:text-[34px] font-bold"
+                            style={{ fontFamily: '"MoreSugar"', letterSpacing: "2.5px", color: "#c9a84c" }}
                         >
                             Our Growth Journey
                         </h2>
@@ -88,23 +88,23 @@ export default function GrowthJourneySection() {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.3 }}
-                        className="flex flex-col sm:flex-row items-center justify-between gap-8 sm:gap-0"
+                        className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center sm:gap-0"
                     >
                         {stats.map((stat, index) => (
-                            <div key={stat.id} className="flex items-center gap-0 flex-1 justify-center">
+                            <div key={stat.id} className="flex w-full items-center gap-0 sm:flex-1 sm:justify-center">
 
                                 {/* Stat Item */}
                                 <motion.div
                                     variants={itemVariants}
-                                    className="flex items-center gap-4 flex-1 justify-center"
+                                    className="flex w-full items-center justify-start gap-4 rounded-xl border border-[#c9a84c]/20 bg-white/[0.045] px-4 py-4 sm:w-auto sm:flex-1 sm:justify-center sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0"
                                 >
                                     {/* Icon */}
-                                    <div className="flex-shrink-0">
+                                    <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-[#123d2c] sm:h-auto sm:w-auto sm:bg-transparent">
                                         {stat.icon}
                                     </div>
 
                                     {/* Text */}
-                                    <div>
+                                    <div className="min-w-0 text-left">
                                         <div
                                             className="font-bold leading-none mb-1"
                                             style={{

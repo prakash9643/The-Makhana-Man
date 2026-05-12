@@ -167,7 +167,7 @@ export function ChoiceIsClearSection() {
         >
           {/* Primary CTA */}
           <Link
-          href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20order%207%20Suta%20Makhana"
+          href="https://wa.me/917739756165?text=Hi%2C%20I%20want%20to%20order%207%20Suta%20Makhana"
             className="font-family-more-sugar  group relative inline-flex items-center gap-2 font-bold uppercase tracking-widest px-8 py-4 rounded-full overflow-hidden transition-all duration-300"
             style={{
               fontFamily: "'More Sugar', cursive",
@@ -186,7 +186,7 @@ export function ChoiceIsClearSection() {
 
           {/* WhatsApp CTA */}
           {/* <a
-            href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20order%207%20Suta%20Makhana"
+            href="https://wa.me/917739756165?text=Hi%2C%20I%20want%20to%20order%207%20Suta%20Makhana"
             target="_blank"
             rel="noopener noreferrer"
             className="font-family-more-sugar group inline-flex items-center gap-2 font-bold uppercase tracking-widest px-8 py-4 rounded-full transition-all duration-300"
