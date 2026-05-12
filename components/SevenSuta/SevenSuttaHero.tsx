@@ -36,11 +36,41 @@ export function SevenSutaHero() {
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
 
           <motion.div
-            className="w-full lg:w-1/2 flex items-center justify-center order-1 lg:order-2 ml-0 xl:ml-[220px]"
+            className="relative w-full lg:w-1/2 flex items-center justify-center order-1 lg:order-2 ml-0 xl:ml-[220px]"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
+            <motion.div
+              className="absolute left-[8%] top-[18%] sm:left-[14%] sm:top-[16%] lg:left-[6%] lg:top-[18%] z-10 flex items-center"
+              initial={{ opacity: 0, x: -18, y: 8 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ duration: 0.65, delay: 0.75 }}
+            >
+              <span className="rounded-full border-2 border-[#046b46] bg-white/85 px-4 py-2 font-bold uppercase tracking-widest text-[#046b46] shadow-[0_8px_24px_rgba(4,107,70,0.18)] text-[12px] sm:text-[14px] font-family-more-sugar">
+                22.2mm+
+              </span>
+              <svg
+                className="h-[46px] w-[78px] sm:h-[58px] sm:w-[112px] -ml-1 mt-7 text-[#046b46]"
+                viewBox="0 0 112 58"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 6C28 14 50 28 82 44"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M76 31L84 45L68 47"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </motion.div>
             <img
               src="/images/newui_comics/makhnapng.png"
               alt="7 Suta Makhana"
@@ -57,8 +87,8 @@ export function SevenSutaHero() {
               transition={{ duration: 0.6 }}
             >
               <BadgePill>India&apos;s Finest</BadgePill>
-              <BadgePill>Ultra Premium</BadgePill>
               <BadgePill>Bihar&apos;s Pride</BadgePill>
+              <BadgePill>Ultra Premium</BadgePill>
             </motion.div>
 
             <motion.div
