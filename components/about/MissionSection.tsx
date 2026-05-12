@@ -100,7 +100,7 @@ export default function MissionSection() {
             transition={{ duration: 0.7, delay: 0.18 }}
           >
             {[
-              "Potato chips are loved in all 195 countries — served in lunch boxes, parties, flights, and store shelves everywhere. But there's a healthier, ancient alternative from India that deserves a spot on that global shelf: Makhana (also known as fox nuts).",
+              "served in lunch boxes, parties, flights, and store shelves everywhere. But there's a healthier, ancient alternative from India that deserves a spot on that global shelf: Makhana (also known as fox nuts).",
               "The Makhana Man's mission is to see Makhana reach the world — not just as a trend, but as a timeless snack people love and trust.",
               "To bring this vision to life, we have set up a dedicated Makhana manufacturing unit in Karhagola, Bihar, right where the best Makhana grows.",
             ].map((para, i) => (

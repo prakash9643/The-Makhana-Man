@@ -1,6 +1,9 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { Autoplay } from "swiper/modules"
+import { Swiper, SwiperSlide } from "swiper/react"
+import "swiper/css"
 
 const steps = [
   {
@@ -216,30 +219,45 @@ export function TheProcessSection() {
           </motion.p>
         </div>
 
-        {/* ── DESKTOP: 7-column card grid ── */}
-        <div className="hidden lg:block relative">
+        {/* ── PROCESS CARD SLIDER ── */}
+        <div className="relative">
 
           {/* Connecting spine */}
           <div
-            className="absolute left-[6%] right-[6%] pointer-events-none"
+            className="absolute left-[6%] right-[6%] pointer-events-none hidden lg:block"
             style={{ top: 50, height: "1.5px", background: "linear-gradient(90deg, #046b46 0%, #7B2D8B 45%, #046b46 70%, #c14b33 100%)", opacity: 0.13 }}
           />
 
-          <div className="grid grid-cols-7 gap-2.5">
+          <Swiper
+            modules={[Autoplay]}
+            loop={true}
+            speed={650}
+            spaceBetween={10}
+            autoplay={{
+              delay: 2600,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            breakpoints={{
+              0: { slidesPerView: 2, spaceBetween: 10 },
+              1024: { slidesPerView: 4, spaceBetween: 12 },
+            }}
+            className="!overflow-hidden"
+          >
             {steps.map((step, i) => (
-              <motion.div
-                key={step.id}
-                className="relative flex flex-col rounded-3xl p-3.5"
-                style={{
-                  backgroundColor: step.bg,
-                  border: `1.5px solid ${step.border}22`,
-                  minHeight: 240,
-                }}
-                initial={{ opacity: 0, y: 28 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.07 * i }}
-              >
+              <SwiperSlide key={step.id} className="!h-auto">
+                <motion.div
+                  className="relative flex h-full flex-col rounded-3xl p-3.5"
+                  style={{
+                    backgroundColor: step.bg,
+                    border: `1.5px solid ${step.border}22`,
+                    minHeight: 240,
+                  }}
+                  initial={{ opacity: 0, y: 28 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.07 * i }}
+                >
                 {/* Tag pill — same as BadgePill in SevenSutaHero */}
                 <span
                   className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border font-bold uppercase font-family-cosmic-sans self-start mb-2.5"
@@ -316,111 +334,10 @@ export function TheProcessSection() {
                     </span>
                   </div>
                 )}
-              </motion.div>
+                </motion.div>
+              </SwiperSlide>
             ))}
-          </div>
-        </div>
-
-        {/* ── MOBILE: vertical timeline ── */}
-        <div className="flex flex-col gap-0 lg:hidden">
-          {steps.map((step, i) => (
-            <motion.div
-              key={step.id}
-              className="flex items-start gap-4"
-              initial={{ opacity: 0, x: -24 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.06 * i }}
-            >
-              {/* Spine */}
-              <div className="flex flex-col items-center flex-shrink-0 w-10">
-                <div
-                  className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
-                  style={{
-                    backgroundColor: step.bg,
-                    border: `1.5px solid ${step.border}40`,
-                    color: step.accent,
-                  }}
-                >
-                  {step.icon}
-                </div>
-                {i < steps.length - 1 && (
-                  <div
-                    className="w-px my-1"
-                    style={{
-                      minHeight: 36,
-                      background: `linear-gradient(180deg, ${step.accent}50 0%, ${steps[i + 1].accent}25 100%)`,
-                    }}
-                  />
-                )}
-              </div>
-
-              {/* Content */}
-              <div className="pb-6 flex-1 pt-1">
-                <div className="flex items-center gap-2 mb-1">
-                  <span
-                    className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border font-bold uppercase font-family-cosmic-sans"
-                    style={{
-                      fontSize: 9,
-                      letterSpacing: "0.1em",
-                      borderColor: `${step.accent}35`,
-                      color: step.accent,
-                      backgroundColor: step.bg,
-                    }}
-                  >
-                    <span className="w-1 h-1 rounded-full inline-block" style={{ backgroundColor: step.accent }} />
-                    {step.tag}
-                  </span>
-                  <span
-                    className="font-bold font-family-more-sugar"
-                    style={{ fontFamily: "'More Sugar', cursive", fontSize: 10, color: step.accent, opacity: 0.35 }}
-                  >
-                    {step.id}
-                  </span>
-                </div>
-
-                <p
-                  className="font-bold uppercase font-family-more-sugar leading-snug mb-1"
-                  style={{
-                    fontFamily: "'More Sugar', cursive",
-                    fontSize: "clamp(13px, 3.5vw, 15px)",
-                    color: step.accent,
-                    letterSpacing: "0.06em",
-                    whiteSpace: "pre-line",
-                  }}
-                >
-                  {step.title}
-                </p>
-
-                <p
-                  className="font-bold uppercase font-family-more-sugar leading-relaxed"
-                  style={{
-                    fontFamily: "'More Sugar', cursive",
-                    fontSize: "clamp(10px, 2.5vw, 11px)",
-                    color: "#4b3f3f",
-                    letterSpacing: "0.04em",
-                  }}
-                >
-                  {step.desc}
-                </p>
-
-                {step.note && (
-                  <div className="flex items-center gap-1.5 mt-1.5">
-                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none">
-                      <circle cx="4.5" cy="4.5" r="4" fill={step.accent} opacity="0.15"/>
-                      <circle cx="4.5" cy="4.5" r="1.8" fill={step.accent}/>
-                    </svg>
-                    <span
-                      className="font-bold uppercase font-family-cosmic-sans"
-                      style={{ fontSize: 9, color: step.accent, letterSpacing: "0.1em" }}
-                    >
-                      {step.note}
-                    </span>
-                  </div>
-                )}
-              </div>
-            </motion.div>
-          ))}
+          </Swiper>
         </div>
 
         {/* ── BOTTOM STATS — exact pattern from SevenSutaHero / WhereItComesFromSection ── */}

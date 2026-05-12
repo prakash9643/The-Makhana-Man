@@ -115,8 +115,7 @@ export function SevenSutaHero() {
             >
               Not just any makhana — 7+ Suta. Every kernel is individually
               handpicked for{" "}
-              <span className="text-[#046b46]">perfect roundness</span> and
-              uniformity. The rarest grade from Bihar&apos;s{" "}
+              <span className="text-[#046b46]">perfect roundness.</span> The rarest grade from Bihar&apos;s{" "}
               <span className="text-[#7B2D8B]">floodplains</span>, curated by hand.
             </motion.p>
 

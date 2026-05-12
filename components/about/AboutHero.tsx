@@ -105,9 +105,7 @@ export default function AboutHero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, delay: 0.25 }}
             >
-              Yes, you read that right. Potato chips are loved in all{" "}
-              <span className="text-[#f5c842]">195 countries</span>.{" "}
-              Makhana deserves that shelf. And we&apos;re putting it there.
+              <span className="text-[#f5c842]">Yes, you read that right.</span>
             </motion.p>
 
             {/* CTA buttons */}
